@@ -29,7 +29,7 @@ const Tiempo = () => {
   return (
     <div className="min-h-screen flex items-start justify-center bg-[#fffff9] bg-[url('/all-books.png')] bg-repeat-x bg-cover bg-center"> 
       <Navigation />
-      <div className="bg-[#E7DCD1] min-h-screen pt-12 px-4">
+      <div className="bg-[#E7DCD1] min-h-screen pt-32 px-4">
         <div className="flex justify-between mb-4">
           <button
             className="bg-green-500 text-white py-2 px-4 rounded"

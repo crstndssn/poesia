@@ -19,11 +19,10 @@ const Tiempo = () => {
                 <div className="pt-12">
                     <h2 className="">1998</h2>
                     <p className="">
-                      Martes de Poesía remonta sus orígenes al Municipio de Tarqui, en el año 1998, 
-                      con la estrategia "Tres poemas para celebrar el día", en el que tres niñas y niños 
-                      elegían un poema para festejar algo de su vida, que sería luego compartido en un 
-                      ciclo de lectura en la Biblioteca de la institución frente a maestros y otros estudiantes, 
-                      precedido de un ritual de inicio.
+                        con la estrategia &apos;Tres poemas para celebrar el día&apos;, en el que tres niñas y niños &quot;
+                        elegían un poema para festejar algo de su vida, que sería luego compartido en un &quot;
+                        ciclo de lectura en la Biblioteca de la institución frente a maestros y otros estudiantes, &quot;
+                        precedido de un ritual de inicio.
                     </p>
                 </div>
                 <button

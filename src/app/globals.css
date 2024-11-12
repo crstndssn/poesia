@@ -2,13 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 @font-face {
-  font-family: 'Dearshy Haislein';
-  src: url('/dearshy-haislein.otf') format('opentype');
+  font-family: 'Courier Prime';
+  src: url('/courier-prime.regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Courier Prime';
+  src: url('/courier-prime.bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'Imager';
   src: url('/Imager.otf') format('woff');
@@ -23,11 +33,19 @@
 }
 
 h1, h2 {
-  font-family: 'Imager Stylist', sans-serif;
+  font-family: "Courier Prime", serif;
+  font-weight: 400;
 }
 
 h3, span {
-  font-family: 'Imager Stylist', sans-serif;
+  font-family: "Courier Prime", serif;
+  font-weight: 400;
+}
+
+
+p, a {
+  font-family: "Courier Prime", serif;
+  font-weight: 400;
 }
 
 .swiper {

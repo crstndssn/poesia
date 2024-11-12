@@ -60,7 +60,12 @@ const Navigation = () => {
                 className={`fixed inset-0 bg-black bg-opacity-95 z-40 flex flex-col justify-center items-center transition-all duration-500 ease-in-out ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
                     }`}
             >
-                <ul className="flex flex-col space-y-8 text-center">
+                <ul className="grid grid-cols-2 space-y-8 text-center">
+                    <li className={`text-5xl text-[#FFFFF9] transition-opacity duration-100 ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
+                        <Link href="/" passHref>
+                            <span onClick={toggleMenu} className="hover:text-gray-400 cursor-pointer">INICIO</span>
+                        </Link>
+                    </li>
                     <li className={`text-5xl text-[#FFFFF9] transition-opacity duration-100 ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
                         <Link href="/cartas" passHref>
                             <span onClick={toggleMenu} className="hover:text-gray-400 cursor-pointer">CARTAS</span>
@@ -86,7 +91,7 @@ const Navigation = () => {
                             <span onClick={toggleMenu} className="hover:text-gray-400 cursor-pointer">DOCUMENTOS</span>
                         </Link>
                     </li>
-                    <li className={`text-5xl text-[#FFFFF9] transition-opacity duration-400 ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
+                    <li className={`col-span-2 text-5xl text-[#FFFFF9] transition-opacity duration-400 ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
                         <Link href="/tiempo" passHref>
                             <span onClick={toggleMenu} className="hover:text-gray-400 cursor-pointer">LINEA DEL TIEMPO</span>
                         </Link>
