@@ -51,11 +51,35 @@ import { useState } from 'react';
 
 import React from 'react'
 import Navigation from '@/components/Navigation.js'
+import Image from 'next/image';
+import CountdownTimer from '@/components/CountdownTimer';
 
 const page = () => {
   return (
-    <div className="min-h-screen flex items-start justify-center bg-[#fffff9] bg-[url('/33-mountains.png')] bg-repeat-x bg-contain"> <Navigation />
-    
+    <div className="min-h-screen flex items-start justify-center bg-[#fffff9] bg-[url('/38.png')] bg-no-repeat bg-cover bg-bottom"> <Navigation />
+
+      <div className="container mx-auto flex flex-col justify-center items-center min-h-[90vh] gap-10 mt-[30px]">
+        <div className="flex justify-center items-center ">
+          <p className="text-[23px] text-center px-4">Su pasión por la vida y la palabra poética ha hecho de ella una investigadora constante, maestra por vocación, tallerista y conferencista internacional.
+
+            Es directora de la Red De Amor Y Poesía que promueve su lectura y su goce...
+
+            Sus poemas se han incluido en distintas publicaciones entre las que se encuentran: Matamundo, Parvulario y Mujeres al verso, antología de mujeres poetas huilenses, entre otras.</p>
+
+        </div>
+        <CountdownTimer />
+
+
+        <div className="flex justify-around w-1/3 max-h-28 mb-7">
+          <Image className='w-36 h-max' src="/BNC_Color.png" alt="alt" width={184} height={90} />
+          <Image className='w-24 h-max' src="/CULTURAS_COLOR.png" alt="alt" width={184} height={90} />
+          <Image className='w-36 h-max' src="/RNBP_Color.png" alt="alt" width={184} height={90} />
+        </div>
+
+
+
+
+      </div>
     </div>
   )
 }
