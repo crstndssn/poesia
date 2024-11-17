@@ -47,12 +47,18 @@ const Contenido = () => {
 
 
     return (
-        <div className="m-7 md:mx-32 mt-32 md:mt-40 flex flex-col">
+        <div className="mt-24 md:mt-40 flex flex-col">
+
+            {/* CONTENT */}
+            <div className="m-7 md:mx-32">
+                <Carta cartaSeleccionada={cartaSeleccionada} />
+            </div>
+
 
             {/* LINKS */}
-            <div className="w-full flex justify-center gap-4 bg-[#FFFFF3] rounded-full p-2 shadow-lg overflow-auto h-12 pl-24 md:pl-2">
+            <div className="bg-[url('/letter-background.png')] bg-cover bg-center fixed bottom-0 w-full flex justify-center gap-4 border-y border-black p-2 shadow-lg overflow-auto h-23 pl-64 md:pl-2">
                 <span
-                    className={`w-full min-w-28 border-2 h-8  border-black rounded-full text-center
+                    className={`cursor-pointer flex justify-center items-center w-full min-w-28 border h-8  border-black rounded-full text-center
                             ${cartaSeleccionada === 1
                             ? 'bg-black text-amarillo'
                             : 'bg-amarillo text-black'
@@ -64,7 +70,7 @@ const Contenido = () => {
                     carta 1
                 </span>
                 <span
-                    className={`w-full min-w-28 border-2 h-8  border-black rounded-full text-center
+                    className={`cursor-pointer flex justify-center items-center w-full min-w-28 border h-8  border-black rounded-full text-center
                             ${cartaSeleccionada === 2
                             ? 'bg-black text-amarillo'
                             : 'bg-amarillo text-black'
@@ -76,7 +82,7 @@ const Contenido = () => {
                     carta 2
                 </span>
                 <span
-                    className={`w-full min-w-28 border-2 h-8  border-black rounded-full text-center
+                    className={`cursor-pointer flex justify-center items-center w-full min-w-28 border h-8  border-black rounded-full text-center
                             ${cartaSeleccionada === 3
                             ? 'bg-black text-amarillo'
                             : 'bg-amarillo text-black'
@@ -88,7 +94,7 @@ const Contenido = () => {
                     carta 3
                 </span>
                 <span
-                    className={`w-full min-w-28 border-2 h-8  border-black rounded-full text-center
+                    className={`cursor-pointer flex justify-center items-center w-full min-w-28 border h-8  border-black rounded-full text-center
                     ${cartaSeleccionada === 4
                             ? 'bg-black text-amarillo'
                             : 'bg-amarillo text-black'
@@ -100,7 +106,7 @@ const Contenido = () => {
                     carta 4
                 </span>
                 <span
-                    className={`w-full min-w-28 border-2 h-8  border-black rounded-full text-center
+                    className={`cursor-pointer flex justify-center items-center w-full min-w-28 border h-8  border-black rounded-full text-center
                     ${cartaSeleccionada === 5
                             ? 'bg-black text-amarillo'
                             : 'bg-amarillo text-black'
@@ -135,11 +141,6 @@ const Contenido = () => {
                 >
                     carta 7
                 </span> */}
-            </div>
-
-            {/* CONTENT */}
-            <div className="mt-12">
-                <Carta cartaSeleccionada={cartaSeleccionada} />
             </div>
         </div>
     )

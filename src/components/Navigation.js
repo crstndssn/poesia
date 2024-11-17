@@ -66,14 +66,14 @@ const Navigation = () => {
                 className={`fixed inset-0 bg-black bg-opacity-95 z-40 flex flex-col justify-center items-center transition-all duration-500 ease-in-out ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
                     }`}
             >
-                <ul className="grid grid-cols-1 md:grid-cols-2 gap-7 text-center">
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-7 text-cente w-11/12">
                     <Link onClick={toggleMenu} href="/" passHref className={`flex justify-center items-center text-3xl p-3 md:p-7 md:pt-8 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
                         INICIO
                     </Link>
                     <Link onClick={toggleMenu} href="/cartas" passHref className={`flex justify-center items-center text-3xl p-3 md:p-7 md:pt-8 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
                         CARTAS
                     </Link>
-                    <Link onClick={toggleMenu} href="/" passHref className={`flex justify-center items-center text-3xl p-3 md:p-7 md:pt-8 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg opacity-50 ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
+                    {/* <Link onClick={toggleMenu} href="/" passHref className={`flex justify-center items-center text-3xl p-3 md:p-7 md:pt-8 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg opacity-50 ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
                         IMAGENES
                     </Link>
                     <Link onClick={toggleMenu} href="/" passHref className={`flex justify-center items-center text-3xl p-3 md:p-7 md:pt-8 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg opacity-50 ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
@@ -81,10 +81,10 @@ const Navigation = () => {
                     </Link>
                     <Link onClick={toggleMenu} href="/" passHref className={`flex justify-center items-center text-3xl p-3 md:p-7 md:pt-8 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg opacity-50 ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
                         VIDEOS
-                    </Link>
-                    <Link onClick={toggleMenu} href="/" passHref className={`flex justify-center items-center text-3xl p-3 md:p-7 md:pt-8 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg opacity-50 ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
+                    </Link> */}
+                    {/* <Link onClick={toggleMenu} href="/" passHref className={`flex justify-center items-center text-3xl p-3 md:p-7 md:pt-8 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg opacity-50 ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
                         DOCUMENTOS
-                    </Link>
+                    </Link> */}
                     <Link onClick={toggleMenu} href="/" passHref className={`md:col-span-2 flex justify-center items-center text-3xl p-3 md:p-7 md:pt-88 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg opacity-50 ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
                         LINEA DEL TIEMPO
                     </Link>
