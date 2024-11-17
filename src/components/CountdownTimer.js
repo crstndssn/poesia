@@ -39,22 +39,22 @@ export default function CountdownTimer() {
 
     return (
         <div className="flex flex-col items-center justify-center">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-4 gap-4 px-4">
                 <div className="flex flex-col items-center justify-center border-2 border-black rounded-lg py-2 px-3">
-                    <span className="text-4xl md:text-5xl font-semibold">{days}</span>
-                    <span className="text-xl md:text-xl uppercase">Días</span>
+                    <span className="text-3xl md:text-5xl font-semibold">{days}</span>
+                    <span className="text-sm md:text-xl uppercase">Días</span>
                 </div>
                 <div className="flex flex-col items-center justify-center border-2 border-black rounded-lg py-2 px-3">
-                    <span className="text-4xl md:text-5xl font-semibold">{hours}</span>
-                    <span className="text-xl md:text-xl uppercase">Horas</span>
+                    <span className="text-3xl md:text-5xl font-semibold">{hours}</span>
+                    <span className="text-sm md:text-xl uppercase">Horas</span>
                 </div>
                 <div className="flex flex-col items-center justify-center border-2 border-black rounded-lg py-2 px-3">
-                    <span className="text-4xl md:text-5xl font-semibold">{minutes}</span>
-                    <span className="text-xl md:text-xl uppercase">Minutos</span>
+                    <span className="text-3xl md:text-5xl font-semibold">{minutes}</span>
+                    <span className="text-sm md:text-xl uppercase">Minutos</span>
                 </div>
                 <div className="flex flex-col items-center justify-center border-2 border-black rounded-lg py-2 px-3">
-                    <span className="text-4xl md:text-5xl font-semibold">{seconds}</span>
-                    <span className="text-xl md:text-xl uppercase">Segundos</span>
+                    <span className="text-3xl md:text-5xl font-semibold">{seconds}</span>
+                    <span className="text-sm md:text-xl uppercase">Segundos</span>
                 </div>
             </div>
         </div>

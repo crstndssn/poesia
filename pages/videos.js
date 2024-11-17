@@ -6,7 +6,7 @@ const videos = () => {
     return (
         <>
             <Navigation />
-            <div className="min-h-screen flex items-start justify-center bg-[#fffff9] bg-[url('/24.png')] bg-repeat-x bg-cover bg-center">videos</div>
+            <div className="min-h-screen flex items-start justify-center bg-[#fffff9] bg-[url('/24.png')] bg-repeat-x bg-cover bg-center"> <Countimer /> </div>
         </>
     )
 }

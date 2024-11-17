@@ -27,8 +27,8 @@ const Contenido = () => {
         return () => clearInterval(interval); // Limpiar el intervalo cuando se desmonta el componente
     }, [images.length]);
 
-    const [currentImage, setCurrentImage] = useState(0); // Cambié el estado a una constante actualizable
-    const [cartaSeleccionada, setCartaSeleccionada] = useState(null);
+    const [currentImage, setCurrentImage] = useState(1); // Cambié el estado a una constante actualizable
+    const [cartaSeleccionada, setCartaSeleccionada] = useState(1);
 
     const [position, setPosition] = useState({ x: 50, y: 50 });
 
@@ -47,44 +47,99 @@ const Contenido = () => {
 
 
     return (
-        <div className="w-full md:h-screen flex flex-col-reverse md:flex-row pt-18">
+        <div className="m-7 md:mx-32 mt-32 md:mt-40 flex flex-col">
 
-            {/* CONTENT */}
-            <div className="w-full md:w-3/5 border-y-2 md:border-x-2 border-black md:pt-24 px-4">
-                <Carta cartaSeleccionada={cartaSeleccionada} />
+            {/* LINKS */}
+            <div className="w-full flex justify-center gap-4 bg-[#FFFFF3] rounded-full p-2 shadow-lg overflow-auto h-12 pl-24 md:pl-2">
+                <span
+                    className={`w-full min-w-28 border-2 h-8  border-black rounded-full text-center
+                            ${cartaSeleccionada === 1
+                            ? 'bg-black text-amarillo'
+                            : 'bg-amarillo text-black'
+                        }
+                                hover:shadow-lg
+                            `}
+                    onClick={() => setCartaSeleccionada(1)}
+                >
+                    carta 1
+                </span>
+                <span
+                    className={`w-full min-w-28 border-2 h-8  border-black rounded-full text-center
+                            ${cartaSeleccionada === 2
+                            ? 'bg-black text-amarillo'
+                            : 'bg-amarillo text-black'
+                        }
+                                hover:shadow-lg
+                            `}
+                    onClick={() => setCartaSeleccionada(2)}
+                >
+                    carta 2
+                </span>
+                <span
+                    className={`w-full min-w-28 border-2 h-8  border-black rounded-full text-center
+                            ${cartaSeleccionada === 3
+                            ? 'bg-black text-amarillo'
+                            : 'bg-amarillo text-black'
+                        }
+                                hover:shadow-lg
+                            `}
+                    onClick={() => setCartaSeleccionada(3)}
+                >
+                    carta 3
+                </span>
+                <span
+                    className={`w-full min-w-28 border-2 h-8  border-black rounded-full text-center
+                    ${cartaSeleccionada === 4
+                            ? 'bg-black text-amarillo'
+                            : 'bg-amarillo text-black'
+                        }
+                            hover:shadow-lg
+                        `}
+                    onClick={() => setCartaSeleccionada(4)}
+                >
+                    carta 4
+                </span>
+                <span
+                    className={`w-full min-w-28 border-2 h-8  border-black rounded-full text-center
+                    ${cartaSeleccionada === 5
+                            ? 'bg-black text-amarillo'
+                            : 'bg-amarillo text-black'
+                        }
+                            hover:shadow-lg
+                        `}
+                    onClick={() => setCartaSeleccionada(5)}
+                >
+                    carta 5
+                </span>
+                {/* <span
+                    className={`w-full min-w-28 border-2 h-8  border-black rounded-full text-center
+                    ${cartaSeleccionada === 6
+                            ? 'bg-black text-amarillo'
+                            : 'bg-amarillo text-black'
+                        }
+                    hover:shadow-lg
+                `}
+                    onClick={() => setCartaSeleccionada(6)}
+                >
+                    carta 6
+                </span> */}
+                {/* <span
+                    className={`w-full min-w-28 border-2 h-8  border-black rounded-full text-center
+                    ${cartaSeleccionada === 7
+                            ? 'bg-black text-amarillo'
+                            : 'bg-amarillo text-black'
+                        }
+                    hover:shadow-lg
+                `}
+                    onClick={() => setCartaSeleccionada(7)}
+                >
+                    carta 7
+                </span> */}
             </div>
 
-            <div className="w-full md:w-1/5 flex flex-col pt-0 md:pt-24">
-                
-
-                {/* LINKS */}
-                <div className="w-full flex flex-col md:fixed bottom-40">
-                    <span
-                        className={`w-full border border-amarillo cursor-pointer font-semibold text-2xl md:text-3xl py-2 pl-4 ${cartaSeleccionada === 0 ? 'text-amarillo bg-black border-black' : 'text-black bg-transparent'}`}
-                        onClick={() => setCartaSeleccionada(0)}
-                    >
-                        inicio
-                    </span>
-                    <span
-                        className={`w-full border border-amarillo cursor-pointer font-semibold  text-2xl md:text-3xl py-2 pl-4 ${cartaSeleccionada === 1 ? 'text-amarillo bg-black border-black' : 'text-black bg-transparent'}`}
-                        onClick={() => setCartaSeleccionada(1)}
-                    >
-                        carta 1
-                    </span>
-                    <span
-                        className={`w-full border border-amarillo cursor-pointer font-semibold  text-2xl md:text-3xl py-2 pl-4 ${cartaSeleccionada === 2 ? 'text-amarillo bg-black border-black' : 'text-black bg-transparent'}`}
-                        onClick={() => setCartaSeleccionada(2)}
-                    >
-                        carta 2
-                    </span>
-                    <span
-                        className={`w-full border border-amarillo cursor-pointer font-semibold  text-2xl md:text-3xl py-2 pl-4 ${cartaSeleccionada === 3 ? 'text-amarillo bg-black border-black' : 'text-black bg-transparent'}`}
-                        onClick={() => setCartaSeleccionada(3)}
-                    >
-                        carta 3
-                    </span>
-                </div>
-
+            {/* CONTENT */}
+            <div className="mt-12">
+                <Carta cartaSeleccionada={cartaSeleccionada} />
             </div>
         </div>
     )

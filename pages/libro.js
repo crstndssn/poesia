@@ -15,7 +15,7 @@ const Tiempo = () => {
     return (
         <>
             <Navigation />
-            <div className="bg-[#E7DCD1] min-h-screen">
+            <div className="bg-[#E7DCD1] bg-[url('/39.png')] bg-repeat-x bg-cover bg-bottom min-h-screen">
                 <div className="pt-12">
                     <h2 className="">1998</h2>
                     <p className="">

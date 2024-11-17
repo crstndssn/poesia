@@ -31,17 +31,16 @@ export default function Home() {
     const [cartaSeleccionada, setCartaSeleccionada] = useState(null);
 
     return (
-        <div className="min-h-screen flex items-start justify-center bg-[#fffff9]">
 
-            <div className="w-full">
-
-                <Navigation />
-
-                <Contenido />
-
-                <Descargar />
-
+        <>
+            <Navigation />
+            <div className="min-h-screen bg-[url('/23rev.png')] bg-fixed bg-[length:auto_100%] md:bg-[url('/23.png')] bg-repeat-x md:bg-cover bg-center flex items-start justify-center bg-[#fffff9]">
+                <div className="w-full">
+                    <Contenido />
+                    {/* <Descargar /> */}
+                </div>
             </div>
-        </div>
+        </>
+
     );
 }
