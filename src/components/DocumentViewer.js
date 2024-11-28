@@ -1,6 +1,42 @@
-import { useState } from 'react';
+import dynamic from 'next/dynamic';
+import { useEffect, useState } from 'react';
 
 const DocumentViewer = ({ fileUrl, isOpen, onClose }) => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simula la carga inicial para evitar diferencias entre el SSR y CSR
+    const timer = setTimeout(() => setLoading(false), 1000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const renderContent = () => {
+    if (loading) {
+      return <p>Cargando...</p>;
+    }
+
+    if (fileUrl.endsWith('.pdf')) {
+      return (
+        <iframe
+          src={fileUrl}
+          className="w-full h-96 border rounded"
+          title="PDF Document"
+        />
+      );
+    }
+
+    if (fileUrl.endsWith('.jpg') || fileUrl.endsWith('.png')) {
+      return <img src={fileUrl} alt="Visual Content" className="w-full rounded" />;
+    }
+
+    if (fileUrl.endsWith('.mp4')) {
+      const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
+      return <ReactPlayer url={fileUrl} controls width="100%" />;
+    }
+
+    return <p>No se puede mostrar este tipo de archivo</p>;
+  };
+
   return (
     <div
       className={`fixed inset-0 bg-gray-900 bg-opacity-50 z-50 flex items-center justify-center ${
@@ -14,17 +50,7 @@ const DocumentViewer = ({ fileUrl, isOpen, onClose }) => {
         >
           ✖️
         </button>
-
-        {fileUrl.endsWith('.pdf') ? (
-          <iframe
-            src={fileUrl}
-            className="w-full h-96 border rounded"
-            title="PDF Document"
-          />
-        ) : (
-          // Aquí podrías añadir una librería como `react-doc-viewer`
-          <p>No se puede mostrar este tipo de archivo</p>
-        )}
+        {renderContent()}
       </div>
     </div>
   );

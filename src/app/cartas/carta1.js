@@ -4,7 +4,7 @@ import '../globals.css'
 const carta1 = () => {
   return (
     <div>
-      <h1 className="font-bold text-2xl md:text-4xl mb-4 md:text-center">CARTA 1. Robarle un día al dios de la guerra</h1>
+      <h1 className="font-bold text-2xl md:text-4xl mb-4 md:text-center">CARTA 1. El aeropuerto invisible</h1>
       <p className="text-xl text-justify">
         Querido Andru: <br/><br/>
         Ahora que tienes el proyecto de disfrutar la tarea de ser maestro,  escribo estas cartas para tí y para las niñas y niños que fueron parte de la experiencia de MARTES DE POESÍA y que hoy, como adultos,  sueñan y trabajan por construir un mundo en el que todos tengamos un  lugar, como aquel por el que pregunta María Elena Walsh en el poema que tu memoria trajo a nuestro encuentro<br/><br/>

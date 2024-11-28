@@ -92,3 +92,11 @@ p, a {
   justify-content: center;
   align-items: center;
 }
+
+.logoBar img {
+  display: none !important;
+}
+
+.pt-brand-bar {
+  display: none !important;
+}

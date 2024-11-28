@@ -73,6 +73,9 @@ const Navigation = () => {
                     <Link onClick={toggleMenu} href="/cartas" passHref className={`flex justify-center items-center text-3xl p-3 md:p-7 md:pt-8 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
                         CARTAS
                     </Link>
+                    <Link onClick={toggleMenu} href="/libro" passHref className={`flex justify-center items-center text-3xl p-3 md:p-7 md:pt-8 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
+                        LIBRO
+                    </Link>
                     {/* <Link onClick={toggleMenu} href="/" passHref className={`flex justify-center items-center text-3xl p-3 md:p-7 md:pt-8 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg opacity-50 ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
                         IMAGENES
                     </Link>

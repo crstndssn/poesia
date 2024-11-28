@@ -4,38 +4,69 @@ import '../globals.css'
 const carta1 = () => {
   return (
     <div>
-      <h1 className=" text-4xl mb-2 text-center">CARTA 1. El aeropuerto invisible</h1>
+      <h1 className=" text-4xl mb-2 text-center">Carta 7. ¿logramos cambiar el mundo?</h1>
       <p className=" text-xl text-justify">
         Querido Andru:
 
-        Ahora que tienes el proyecto de disfrutar la tarea de ser maestro,  escribo estas cartas para tí y para las niñas y niños que fueron parte de la experiencia de MARTES DE POESÍA y que hoy, como adultos,  sueñan y trabajan por construir un mundo en el que todos tengamos un  lugar, como aquel por el que pregunta María Elena Walsh en el poema que tu memoria trajo a nuestro encuentro
+        ¡Cómo quisiera decirte que logramos cambiar el mundo! ¡Cómo quisiera que los Martes de Poesía, con los que le robamos un día a la guerra, continuaran desarrollándose en El Hobo y se hubieran expandido por todo el Huila! ¡Cómo quisiera que muchas niñas y niños pudieran vivir esas historias hermosas en la poesía!
 
-        Tal vez  recuerdas que llegué al municipio de El Hobo (Huila) en el año 2003. Un año atrás había ocurrido el secuestro de un senador de la república, mediador de los diálogos de paz que se estaban desarrollando  entre el gobierno nacional y las Farc-Ep.
+        Pero ¿Sabes? la guerra y la violencia se las arreglan para andar por ahí, siempre merodeando. Y nosotros, a veces, nos olvidamos de cantar el amor que nos tenemos y nos olvidamos de reírnos de las dificultades. Entonces el corazón parece endurecerse. Y la poesía se queda esperando que, de nuevo, acudamos a ella y la saquemos a bailar.
 
-        Los estudiantes de la I.E Roberto Suaza Marquínez, a la que tú perteneciste, me llevaron al segundo piso de la planta física  para mostrarme, según ellos, el aeropuerto, porque desde allí podía verse el sector de la carretera nacional en donde hicieron aterrizar el avión para llevar a cabo el secuestro.
+        Por eso, feliz de agarrarme de la esperanza que sembramos un día y que sigue creciendo en ustedes, recuerdo hoy cuando leímos el poema de William Fernando Torres, BAJO PEDREGAL XII, que nos propició el encuentro cara a cara con los dolores que nos ha causado la guerra.
 
-        Debido a este acontecimiento, El Hobo hizo parte de las noticias nacionales e internacionales. Estaba en la mirada del mundo, porque, además de ser un hecho que podía causar la ruptura de los diálogos de paz, había ocurrido de  manera muy cinematográfica.
+        El poema usa la imagen de los ratones que saquean las alacenas. No sé si lo recuerdas, pero en cuanto lo escucharon, alguien mencionó que era la violencia. Terminamos la lectura y les pregunté si les gustaría que habláramos de ello. Varios agacharon la cabeza y fue cuando les propuse que escribiéramos esas historias que nos causaban dolor.
 
-        En 1984, este municipio había recibido el apelativo de “Ínsula de paz”, por ser uno de los tres lugares en los que se habían  firmado los acuerdos de paz con el M-19. Sin embargo, en los últimos años había sido objeto de dos tomas guerrilleras, en una de las cuales, la escuela que quedaba en el centro del pueblo y que en ese momento tenía los niños de vacaciones, pasó a ser trinchera del ejército.  Luego el riesgo para los niños se hizo evidente, así que decidieron  que continuaran sus clases en la sede del Bachillerato.
+        Después algunos compartieron sus textos y, consternados y muchos en medio de las lágrimas, empezamos a trabajar en los relatos.  Subrayaron las frases que les generaban más sensaciones: dolor, impotencia, ganas de llorar, angustia… Y buscaron imágenes que les permitieran decirlo pero que tuvieran la fuerza y la polifonía del texto poético.
 
-        Esto, en un país en medio de la guerra, hace parte de la historia cotidiana de sus pobladores. Imágenes en la memoria y en las fotografías que revelan una relación casi naturalizada con hechos violentos o con la amenaza de que ocurran.  Están ahí… sin muchas preguntas. Y también  sin respuestas.
+        Hecho eso, cada uno decidió el camino para construir el texto a partir de estas imágenes.  Yo, por mi parte, estaba atenta al momento en que decidían que me necesitaban.  Era entonces cuando les hacía preguntas que les ayudaban a aclarar su propuesta o a observar otras alternativas. De los talleres de producción poética este fue el más doloroso, pero también el que iluminó la promesa de días mejores.
 
-        Pero ¿por qué empezar con la imagen de los niños y niñas mostrándome un aeropuerto invisible? ¿por qué, con ellos contándome que algunos tenían en sus álbumes familiares  fotos con el avión que forzaron a aterrizar  ese día?, ¿Tú también tenías una? . Asomada a una parte fundamental de la historia de estos niños y sus familias, asomada a sus inquietudes y prioridades, escuchándoles hablar de este acontecimiento como parte de la magia que utilizan cada día para convertir los miedos en posibilidades de ser, me veo preguntándome si hay algo que yo pueda hacer como maestra y como poeta frente a esta realidad.
+        Como en el poema de Jonathan, COMO SI SE REGARA LA PINTURA NEGRA, en el que se hizo evidente la decisión de cambiar su dolor por otra posibilidad.</p>
 
-        Les conté que venía de Tarqui (Huila). ¿Recuerdas?,  un municipio acomodado en la Serranía de las Minas, en el que empecé a jugar poesía con mis estudiantes y con algunos grupos de las escuelas.  Con las profesoras del área de Lengua Castellana logramos un espacio diario para que los estudiantes renovaran y reconstruyeran su relación con la poesía, al que bautizamos TRES POEMAS PARA CELEBRAR EL DÍA.
+        <div>
+          <p className="">
+            “Como si se regara la pintura
+            negra sobre el piso
+            y se expandiera como nubes en el cielo,
+            así llegó el dolor por doble hilo.
 
-        Durante varios años, al finalizar la jornada escolar, a las 4 de la tarde, nos reuníamos en la biblioteca del Colegio,  con los estudiantes del grado que tenía a su cargo en ese momento la actividad. A ellos se sumaban estudiantes de otros grados que querían disfrutar de la poesía o quizá husmear un poco en la vida de los tres lectores del día para ver cuál era la razón de su celebración. Así, con un poco de obligación y otro poco de voluntad, logramos que los chicos y chicas se relacionaran con la poesía de otra manera
-        .
-        Pero “¿qué podemos celebrar?.  A nosotros no nos pasan grandes cosas”.  El asunto no sólo era qué poema voy a leer.  Entonces, ¿qué poema? ¿por qué este? ¿qué celebro? ¿Tengo que decirlo a todos? ¿Y si se ríen? ¿Y eso no es para niñas?. Preguntas atadas a su cotidianidad, al concepto de poesía, al conocimiento de textos poéticos, al concepto de vida y celebración, a los miedos de exponerse, a la relación entre la poesía y su reconocimiento de su identidad sexual…En fin.
+            Como un niño perdido,
+            gritando y llorando,
+            poco a poco
+            el rencor se ha formado.
 
-        Frente a todo esto, la búsqueda de respuestas no estaba en el salón de clase. En la sala de mi casa, recostados en el piso, con todos mis libros de poesía a su disposición y una conversación desparpajada, sin presiones, con muchas risas y descubrimientos de quiénes somos, qué soñamos, qué queremos. Todos, en igualdad de condiciones, todos vulnerables y todos con poder. Ahí encontramos respuestas.
+            Es como un dolor que nos enturbia el alma…
 
-        Luego, cuando fui a trabajar al municipio de El Hobo, me llevé todo lo que mis estudiantes de Tarqui me enseñaron en esos encuentros y escuché atentamente estos nuevos requerimientos. ¿De dónde aprendí a escuchar? de mi madre, de mis abuelas, de mis maestras y maestros, de la señora de la esquina, del señor de la tienda,   de la poesía, en fin… de la vida.  Escuchar era la clave y aún sigue siendo.  Así que sentí que la poesía, nuevamente, nos abriría caminos en el Hobo.
+            Es un agua que no quiero beber más”.
+            (Jonathan Anderson Pastrana)
+          </p>
+        </div>
 
-        ¿Y cómo logré que fueran los martes? ¡Te seguiré contando!
-        Un abrazo de albahaca y brisa.
+        <div className="">
+          <p className="">Si. También recuerdo que hubo quienes no pudieron terminar de escribirlo porque era demasiado el dolor que sentían. Como el chico que había perdido a uno de sus amigos más queridos. Empezó escribiendo “Si del barro he nacido y en barro quedaré…” . Quería, a partir de la metáfora del artesano contar sin contar.  Pero no pudo.  Quién sabe si lo habrá terminado alguna vez.
 
-        Amparo.</p>
+            De todas maneras, Andru, conseguimos que ustedes pudieran reflexionar desde la poesía sobre sus experiencias, sus dolores, sus vivencias, sus amores, en fin… que pudieran autorreconocerse, expresarse, encontrar en la poesía un espacio de provocación  y multiplicar la pasión por la vida, como lo demostraron en el Servicio Social Estudiantil con las niñas y niños de los hogares comunitarios.  Esas palabras, usadas todos los días, jugando en el poema,  les ofrecieron otra perspectiva de la vida y de los acontecimientos.
+
+            Ya, cuando volvimos a encontrarnos, descubrí la poesía que ahora vive en ustedes. No importa si escriben poemas o no. Su vida tiene la huella de la pasión que alimentamos en nuestro Martes de poesía. Me emociona el relato de Jorge Alfredo  respecto a los espacios en los que ha incursionado gracias a la poesía.  Y en el de Erika que me cuenta que le dice poemas a su bebé de tres meses y se calma sólo con escucharla y ver los movimientos de sus manos.
+
+            Así mismo, con la manera en que tú y María Camila  han hecho una reflexión sobre la poesía y los procesos pedagógicos.  Y la decisión y el proceso de Johana, y otros chicos, de convertirse en maestros de niños para compartirles poesía. Las afirmaciones de Karol y otros respecto del amor por la lectura y del gusto de compartirla con otros. La posibilidad de que la poesía continúe siendo refugio en los momentos difíciles para Olguita y Jonathan.
+
+
+            La compañía feliz de quienes esperaron que, al llegar el colegio, yo estuviera allí para continuar con Martes de Poesía y se encontraron con mi ausencia, pero siete años después, al verme, cantaron en coro “hoy es martes de… Poesía” y estuvieron en nuestra reunión comentando cuán importante habían sido para ellos las lecturas, el abrazo “racimo de uvas” que nos inventamos, el ritual de cada martes y, por supuesto, todos los sentimientos que les generaron los poemas.
+
+            Los comentarios de las que hoy son madres de familia y aseguran que sueñan con el momento en que sus hijas e hijos puedan vivir una experiencia similar y, mientras tanto, les leen poemas a sus hijos intentando hacerlo como lo recuerdan.  Y, sobre todo, la alegría que todos manifiestan cuando hablan de nuestro Martes de Poesía, porque recuerdan “escuchar a la maestra enseñar lo lindo que es la poesía”
+
+            Creo que todo esto ha valido la pena. Sé que hay maestras y maestros que hoy tienen esa huella en su vida y que, sin pensarlo, llevarán la poesía en sus acciones y actitudes frente a la vida.  Como tú, por ejemplo, Andru, que continuarás siendo “semilla de poesía”, como lo dijiste. Yo, entre tanto, procuro  otros caminos para continuar y envío poemas a través de whatsap para que otros lean a través de mi voz.
+
+            Espero saber de tí nuevamente.  Ya me contarás como has logrado hacer realidad tus sueños con tus estudiantes, como yo lo logré con los míos.  Esa felicidad es incomparable. Y aunque no podamos cambiar el mundo, podemos lograr que cada uno de ellos cambie su manera de verlo y pueda continuar tejiendo una red hecha de amor y poesía para la vida.
+
+            Un abrazo de cantos mañaneros, porque anuncian días llenos de esperanza
+
+            Amparo
+
+          </p>
+        </div>
+
+        <p>Amparo.</p>
     </div>
   )
 }

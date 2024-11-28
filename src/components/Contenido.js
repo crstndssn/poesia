@@ -117,8 +117,8 @@ const Contenido = () => {
                 >
                     carta 5
                 </span>
-                {/* <span
-                    className={`w-full min-w-28 border-2 h-8  border-black rounded-full text-center
+                <span
+                    className={`cursor-pointer flex justify-center items-center w-full min-w-28 border h-8  border-black rounded-full text-center
                     ${cartaSeleccionada === 6
                             ? 'bg-black text-amarillo'
                             : 'bg-amarillo text-black'
@@ -128,9 +128,9 @@ const Contenido = () => {
                     onClick={() => setCartaSeleccionada(6)}
                 >
                     carta 6
-                </span> */}
-                {/* <span
-                    className={`w-full min-w-28 border-2 h-8  border-black rounded-full text-center
+                </span>
+                <span
+                    className={`cursor-pointer flex justify-center items-center w-full min-w-28 border h-8  border-black rounded-full text-center
                     ${cartaSeleccionada === 7
                             ? 'bg-black text-amarillo'
                             : 'bg-amarillo text-black'
@@ -140,7 +140,7 @@ const Contenido = () => {
                     onClick={() => setCartaSeleccionada(7)}
                 >
                     carta 7
-                </span> */}
+                </span>
             </div>
         </div>
     )
