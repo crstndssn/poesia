@@ -1,11 +1,11 @@
 import React from 'react'
 import '../globals.css'
 
-const carta1 = () => {
+const carta6 = () => {
   return (
-    <div>
-      <h1 className=" text-4xl mb-2 text-center">CARTA 6. Y creció, creció y creció.</h1>
-      <p className=" text-xl text-justify">
+    <div className="px-3 mb-12">
+      <h1 className="font-bold text-2xl md:text-4xl mb-4 md:text-center">Carta 6. Y creció, creció y creció.</h1>
+      <p className="text-lg md:text-xl">
         Querido Andru:
 
         Recordé esta mañana que tú estás en la fotografía de la portada  del libro CREO EN LA POESÍA. Eres famoso, ¿sabes? Esa fotografía fue afiche de uno de los Encuentros departamentales de Experiencias Pedagógicas Significativas en el Huila. Y, además, ha ido conmigo a los eventos donde he presentado ponencias  sobre la poesía y la escuela, y particularmente, sobre la Experiencia de Martes de Poesía.
@@ -42,4 +42,4 @@ const carta1 = () => {
   )
 }
 
-export default carta1
+export default carta6

@@ -1,149 +1,87 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useRef } from "react";
 
-import styles from './Butterfly.module.css';
-
-import Carta from '@/app/carta'
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
-import Butterfly from './mariposa';
+import Carta from "@/app/carta";
 
 const Contenido = () => {
-    // Lista de imágenes
-    const images = [
-        "/erase-una-vez.jpg",
-        "/arbol.jpg",
-        "/montaña.jpg"
-    ];
-
-    // Efecto para cambiar la imagen automáticamente cada 1 segundo
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-        }, 1000); // Cambia cada segundo
-
-        return () => clearInterval(interval); // Limpiar el intervalo cuando se desmonta el componente
-    }, [images.length]);
-
-    const [currentImage, setCurrentImage] = useState(1); // Cambié el estado a una constante actualizable
     const [cartaSeleccionada, setCartaSeleccionada] = useState(1);
 
-    const [position, setPosition] = useState({ x: 50, y: 50 });
+    // Referencia al contenedor de los links
+    const scrollContainerRef = useRef(null);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollPosition = window.scrollY;
-            const x = 50 + 30 * Math.cos(scrollPosition * 0.05);
-            const y = 50 + 30 * Math.sin(scrollPosition * 0.05);
+    // Funciones para desplazar el contenedor
+    const scrollLeft = () => {
+        scrollContainerRef.current.scrollBy({
+            left: -150,
+            behavior: "smooth",
+        });
+    };
 
-            setPosition({ x, y });
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
+    const scrollRight = () => {
+        scrollContainerRef.current.scrollBy({
+            left: 150,
+            behavior: "smooth",
+        });
+    };
 
     return (
         <div className="mt-24 md:mt-40 flex flex-col">
-
             {/* CONTENT */}
-            <div className="m-7 md:mx-32">
+            <div className="m-8 md:mx-32">
                 <Carta cartaSeleccionada={cartaSeleccionada} />
             </div>
 
-
             {/* LINKS */}
-            <div className="bg-[url('/letter-background.png')] bg-cover bg-center fixed bottom-0 w-full flex justify-center gap-4 border-y border-black p-2 shadow-lg overflow-auto h-23 pl-64 md:pl-2">
-                <span
-                    className={`cursor-pointer flex justify-center items-center w-full min-w-28 border h-8  border-black rounded-full text-center
-                            ${cartaSeleccionada === 1
-                            ? 'bg-black text-amarillo'
-                            : 'bg-amarillo text-black'
-                        }
-                                hover:shadow-lg
-                            `}
-                    onClick={() => setCartaSeleccionada(1)}
+            <div className="bg-[url('/letter-background.png')] bg-cover bg-center fixed bottom-0 w-full flex items-center border-y border-black shadow-lg h-14">
+                {/* Botón de flecha izquierda */}
+                <button
+                    onClick={scrollLeft}
+                    className="flex items-center justify-center text-black hover:text-gray-600"
                 >
-                    carta 1
-                </span>
-                <span
-                    className={`cursor-pointer flex justify-center items-center w-full min-w-28 border h-8  border-black rounded-full text-center
-                            ${cartaSeleccionada === 2
-                            ? 'bg-black text-amarillo'
-                            : 'bg-amarillo text-black'
-                        }
-                                hover:shadow-lg
-                            `}
-                    onClick={() => setCartaSeleccionada(2)}
+                    <img
+                        src="/arrow-prev-small.svg"
+                        alt="Scroll Left"
+                        className="w-20 h-20"
+                    />
+                </button>
+
+                {/* Contenedor de scroll horizontal */}
+                <div
+                    ref={scrollContainerRef}
+                    className="flex gap-4 overflow-x-auto scrollbar-hide px-2 h-full items-center"
                 >
-                    carta 2
-                </span>
-                <span
-                    className={`cursor-pointer flex justify-center items-center w-full min-w-28 border h-8  border-black rounded-full text-center
-                            ${cartaSeleccionada === 3
-                            ? 'bg-black text-amarillo'
-                            : 'bg-amarillo text-black'
-                        }
-                                hover:shadow-lg
-                            `}
-                    onClick={() => setCartaSeleccionada(3)}
+                    {Array.from({ length: 7 }, (_, i) => i + 1).map((num) => (
+                        <span
+                            key={num}
+                            className={`cursor-pointer flex justify-center items-center w-28 min-w-[100px] border h-8 border-black rounded-full text-center
+                            ${
+                                cartaSeleccionada === num
+                                    ? "bg-black text-amarillo"
+                                    : "bg-amarillo text-black"
+                            }
+                            hover:shadow-lg`}
+                            onClick={() => setCartaSeleccionada(num)}
+                        >
+                            Carta {num}
+                        </span>
+                    ))}
+                </div>
+
+                {/* Botón de flecha derecha */}
+                <button
+                    onClick={scrollRight}
+                    className="flex items-center justify-center text-black hover:text-gray-600"
                 >
-                    carta 3
-                </span>
-                <span
-                    className={`cursor-pointer flex justify-center items-center w-full min-w-28 border h-8  border-black rounded-full text-center
-                    ${cartaSeleccionada === 4
-                            ? 'bg-black text-amarillo'
-                            : 'bg-amarillo text-black'
-                        }
-                            hover:shadow-lg
-                        `}
-                    onClick={() => setCartaSeleccionada(4)}
-                >
-                    carta 4
-                </span>
-                <span
-                    className={`cursor-pointer flex justify-center items-center w-full min-w-28 border h-8  border-black rounded-full text-center
-                    ${cartaSeleccionada === 5
-                            ? 'bg-black text-amarillo'
-                            : 'bg-amarillo text-black'
-                        }
-                            hover:shadow-lg
-                        `}
-                    onClick={() => setCartaSeleccionada(5)}
-                >
-                    carta 5
-                </span>
-                <span
-                    className={`cursor-pointer flex justify-center items-center w-full min-w-28 border h-8  border-black rounded-full text-center
-                    ${cartaSeleccionada === 6
-                            ? 'bg-black text-amarillo'
-                            : 'bg-amarillo text-black'
-                        }
-                    hover:shadow-lg
-                `}
-                    onClick={() => setCartaSeleccionada(6)}
-                >
-                    carta 6
-                </span>
-                <span
-                    className={`cursor-pointer flex justify-center items-center w-full min-w-28 border h-8  border-black rounded-full text-center
-                    ${cartaSeleccionada === 7
-                            ? 'bg-black text-amarillo'
-                            : 'bg-amarillo text-black'
-                        }
-                    hover:shadow-lg
-                `}
-                    onClick={() => setCartaSeleccionada(7)}
-                >
-                    carta 7
-                </span>
+                    <img
+                        src="/arrow-next-small.svg"
+                        alt="Scroll Right"
+                        className="w-20 h-20"
+                    />
+                </button>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Contenido
+export default Contenido;

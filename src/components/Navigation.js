@@ -76,19 +76,19 @@ const Navigation = () => {
                     <Link onClick={toggleMenu} href="/libro" passHref className={`flex justify-center items-center text-3xl p-3 md:p-7 md:pt-8 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
                         LIBRO
                     </Link>
-                    {/* <Link onClick={toggleMenu} href="/" passHref className={`flex justify-center items-center text-3xl p-3 md:p-7 md:pt-8 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg opacity-50 ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
+                    <Link onClick={toggleMenu} href="/imagenes" passHref className={`flex justify-center items-center text-3xl p-3 md:p-7 md:pt-8 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
                         IMAGENES
                     </Link>
-                    <Link onClick={toggleMenu} href="/" passHref className={`flex justify-center items-center text-3xl p-3 md:p-7 md:pt-8 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg opacity-50 ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
+                    <Link onClick={toggleMenu} href="/audios" passHref className={`flex justify-center items-center text-3xl p-3 md:p-7 md:pt-8 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
                         AUDIOS
                     </Link>
-                    <Link onClick={toggleMenu} href="/" passHref className={`flex justify-center items-center text-3xl p-3 md:p-7 md:pt-8 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg opacity-50 ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
-                        VIDEOS
-                    </Link> */}
                     {/* <Link onClick={toggleMenu} href="/" passHref className={`flex justify-center items-center text-3xl p-3 md:p-7 md:pt-8 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg opacity-50 ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
                         DOCUMENTOS
                     </Link> */}
-                    <Link onClick={toggleMenu} href="/" passHref className={`md:col-span-2 flex justify-center items-center text-3xl p-3 md:p-7 md:pt-88 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg opacity-50 ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
+                    <Link onClick={toggleMenu} href="/videos" passHref className={`flex justify-center items-center text-3xl p-3 md:p-7 md:pt-8 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
+                        VIDEOS
+                    </Link>
+                    <Link onClick={toggleMenu} href="/tiempo" passHref className={`md:col-span-2 flex justify-center items-center text-3xl p-3 md:p-7 md:pt-88 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
                         LINEA DEL TIEMPO
                     </Link>
                 </ul>

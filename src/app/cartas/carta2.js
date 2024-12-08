@@ -1,10 +1,10 @@
 import '../globals.css'
 
-const carta1 = () => {
+const carta2 = () => {
     return (
-        <div className='pb-12'>
-            <h1 className="font-bold text-2xl md:text-4xl mb-4 md:text-center">CARTA 2. Robarle un día al dios de la guerra</h1>
-            <p className="text-xl">
+        <div className="px-3 mb-12">
+            <h1 className="font-bold text-2xl md:text-4xl mb-10 md:text-center">CARTA 2. Robarle un día al dios de la guerra</h1>
+            <p className="text-lg md:text-xl">
                 Querido Andru:<br/><br/>
 
                 Como te prometí, te contaré. Sucedió que un martes, a la primera hora de clase, como no debía estar con ningún grupo, pasé por la Rectoría para disfrutar la tarea de compartir un poema y se me ocurrió que podría hacerlo también con los niños de primaria que estaban en la misma sede.  Esa posibilidad era un regalo para mí. Así que conseguí la autorización para hacerlo y empecé a visitar a los niños.<br/><br/>
@@ -21,7 +21,7 @@ const carta1 = () => {
                 A veces olvidaban el nombre de la autora o el autor y me pedían que se los recordara. Fue entonces cuando consideré que eran necesarios tres poemas de cada autor para que los niños lo conocieran un poco más. Tres siempre ha sido para mí un número mágico;<br/><br/>
             </p>
 
-            <p className="text-xl">
+            <p className="text-lg md:text-xl">
                 fueron Tres poemas para celebrar el día y ahora también podría funcionar muy bien el tres.<br/><br/>
 
                 Semana tras semana, visité a los niños de estos cursos. Los martes, a la primera y segunda hora, mi amorosa tarea era presentarme a la puerta del salón de clase y esperar que la maestra o el maestro me permitieran seguir. Los saludaba, les contaba brevemente quién era el autor del poema, se los leía y me iba sin dejarles tarea alguna. Así, los niños esperaban que llegara el día martes y empezaron a contarles a sus padres y a sus amigos esa “cosa extraña” que estaba sucediendo.<br/><br/>
@@ -51,4 +51,4 @@ const carta1 = () => {
     )
 }
 
-export default carta1
+export default carta2

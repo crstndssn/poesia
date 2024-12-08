@@ -3,9 +3,9 @@ import '../globals.css'
 
 const carta5 = () => {
   return (
-    <div>
+    <div className="px-3 mb-12">
       <h1 className="font-bold text-2xl md:text-4xl mb-4 md:text-center">CARTAS 5. ¿Y eso tan bonito si dice ahí, profe?</h1>
-      <p className=" text-xl">
+      <p className="text-lg md:text-xl">
         Andru, ¿Quieres saber si alguna vez me sentí cansada de hacer Martes de
         Poesía?¿Cómo podía cansarme?  Era increíble entrar al salón de clases y encontrarme
         con las chicas y chicos a la espera del poema. Podía ver en ellos las mismas ansias de

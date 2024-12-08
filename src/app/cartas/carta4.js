@@ -3,9 +3,9 @@ import '../globals.css'
 
 const carta5 = () => {
     return (
-        <div>
-            <h1  className="font-bold text-2xl md:text-4xl mb-4 md:text-center">CARTA 4. Profe, ¿pero usted si piensa volver?</h1>
-            <p className=" text-xl">
+        <div className="px-3 mb-12">
+            <h1 className="font-bold text-2xl md:text-4xl mb-4 md:text-center">CARTA 4. Profe, ¿pero usted si piensa volver?</h1>
+            <p className="text-lg md:text-xl">
                 ¿Sabes, Andru? Me gusta mucho recordar esto contigo.Los martes se habían convertido en una cita esperada. Ellos y yo queríamos que llegara el día. Que sonara el timbre de la entrada  y que la puerta del salón se entreabriera para que su profe me permitiera ingresar al salón. Que les contara un poco sobre el poeta. Y que, por fin, les compartiera el poema, que llegaba como un canto mañanero para anunciarles que el día podría ser muy lindo. Y que me fuera, así, sin pedirles nada a cambio, para llevar conmigo el regalo de sus sonrisas y dejar el poema anidando en su corazón.<br/><br/>
 
                 Sin embargo, ocurrió que un día enfermé de mi garganta y dejé de visitarlos por dos semanas. Estaba totalmente afónica y me las había arreglado con la escritura en el tablero para adelantar mis clases con los chicos del bachillerato. Pero así no podría compartirles el poema.  Necesitaba mi voz urgentemente.  Necesitaba sus risas y sus ojos ansiosos.<br/><br/>
