@@ -4,7 +4,7 @@ import Descargar from '@/components/Descargar';
 import Navigation from '@/components/Navigation';
 import DocumentViewer from '@/components/DocumentViewer';
 import ResourceList from '@/components/ResourceList';
-import eventos from '@/data/eventos'; // Importar los datos
+import eventos from '@/data/eventos';
 
 const Tiempo = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +17,7 @@ const Tiempo = () => {
   });
 
   return (
-    <div className="min-h-screen flex items-start justify-center bg-[#fffff9] bg-[url('/all-books.png')] bg-repeat-x bg-cover bg-center"> 
+    <div className="min-h-screen flex items-start justify-center bg-[#fffff9] bg-[url('/all-books.png')] bg-repeat-x bg-cover bg-center">
       <Navigation />
       <div className="container mx-auto min-h-screen pt-32 px-4">
         {/* Botones para ordenar */}
@@ -26,30 +26,32 @@ const Tiempo = () => {
             className="w-full border border-black text-black bg-[#fffff3] py-2 px-4 rounded-full"
             onClick={() => setSortOrder('asc')}
           >
-            ascendente
+            Ascendente
           </button>
           <button
             className="w-full border border-black bg-[#fffff3] rounded-full"
             onClick={() => setSortOrder('desc')}
           >
-            descendente
+            Descendente
           </button>
         </div>
 
         {/* Renderizado de eventos */}
         {sortedEventos.map((evento, index) => (
           <div key={index} className="mb-8">
-            <h2 className="text-3xl">{evento.year}</h2>
-            <p>{evento.description}</p>
+            <h2 className="text-3xl font-bold">{evento.year}</h2>
+            <p className="text-gray-700">{evento.description}</p>
 
-            {/* Renderizar la lista de recursos para cada evento */}
+            {/* Pasar la propiedad `resources` correctamente */}
             <ResourceList
-              resources={evento.resources}
-              onOpen={(url) => {
-                setFileUrl(url);
-                setIsOpen(true);
+              year={evento.year}
+              resources={{
+                pdf: evento.resources.pdfs,
+                image: evento.resources.images,
+                video: evento.resources.videos,
               }}
             />
+
           </div>
         ))}
       </div>

@@ -82,9 +82,6 @@ const Navigation = () => {
                     <Link onClick={toggleMenu} href="/audios" passHref className={`flex justify-center items-center text-3xl p-3 md:p-7 md:pt-8 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
                         AUDIOS
                     </Link>
-                    {/* <Link onClick={toggleMenu} href="/" passHref className={`flex justify-center items-center text-3xl p-3 md:p-7 md:pt-8 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg opacity-50 ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
-                        DOCUMENTOS
-                    </Link> */}
                     <Link onClick={toggleMenu} href="/videos" passHref className={`flex justify-center items-center text-3xl p-3 md:p-7 md:pt-8 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
                         VIDEOS
                     </Link>

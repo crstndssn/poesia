@@ -1,68 +1,81 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
-
-import { useState, useEffect } from 'react';
-import { Navigation, Pagination, Grid } from 'swiper/modules';
-import Image from 'next/image'; // Importa el componente Image de Next.js para optimizar las imágenes
-
-
+import Image from 'next/image';
 import '../src/app/globals.css';
-import Descargar from '@/components/Descargar';
-import Nav from '@/components/Navigation';
+import Navigation from '@/components/Navigation';
 
 const Imagenes = () => {
-  // Lista de imágenes
-  const images = [
-    "/erase-una-vez.jpg",
-    "/arbol.jpg",
-    "/montaña.jpg"
+  const secciones = [
+    {
+      titulo: 'Imágenes lindas',
+      imagenes: [
+        { src: '/imagenes/imagenes-lindas/Apoyo 3.jpg', descripcion: 'Es hermoso crear, pero no tanto como crear con otras y otros. Estudiantes crean colectivamente un poema.' },
+        { src: '/imagenes/imagenes-lindas/Apoyo 5.jpg', descripcion: '' },
+        { src: '/imagenes/imagenes-lindas/Apoyo 8.jpg', descripcion: '' },
+        { src: '/imagenes/imagenes-lindas/Apoyo 9.jpg', descripcion: '' },
+        { src: '/imagenes/imagenes-lindas/Apoyo 11.jpg', descripcion: '' },
+        { src: '/imagenes/imagenes-lindas/Apoyo 12.jpg', descripcion: '' },
+        { src: '/imagenes/imagenes-lindas/Apoyo 13.jpg', descripcion: '' },
+        { src: '/imagenes/imagenes-lindas/Apoyo 14.jpg', descripcion: '' },
+        { src: '/imagenes/imagenes-lindas/Apoyo 18.jpg', descripcion: '' },
+        { src: '/imagenes/imagenes-lindas/Apoyo 20.jpg', descripcion: '' },
+        { src: '/imagenes/imagenes-lindas/Apoyo 23.jpg', descripcion: '' },
+        { src: '/imagenes/imagenes-lindas/Apoyo 24.jpg', descripcion: '' },
+        { src: '/imagenes/imagenes-lindas/Apoyo 25.jpg', descripcion: '' },
+        { src: '/imagenes/imagenes-lindas/Apoyo 26.jpg', descripcion: '' },
+        { src: '/imagenes/imagenes-lindas/Apoyo 28.jpg', descripcion: '' },
+        { src: '/imagenes/imagenes-lindas/Apoyo 30.jpg', descripcion: '' },
+        { src: '/imagenes/imagenes-lindas/Apoyo 31.jpg', descripcion: '' },
+        { src: '/imagenes/imagenes-lindas/Apoyo 32.jpg', descripcion: '' },
+        { src: '/imagenes/imagenes-lindas/Apoyo 33.jpg', descripcion: '' },
+        { src: '/imagenes/imagenes-lindas/Apoyo 34.jpg', descripcion: '' },
+        { src: '/imagenes/imagenes-lindas/Apoyo 36.jpg', descripcion: '' },
+        { src: '/imagenes/imagenes-lindas/Apoyo 38.jpg', descripcion: '' },
+        { src: '/imagenes/imagenes-lindas/Apoyo 39.jpg', descripcion: '' },
+        { src: '/imagenes/imagenes-lindas/Apoyo 40.jpg', descripcion: '' },
+      ],
+    },
+    {
+      titulo: 'Resultados',
+      imagenes: [
+        { src: '/imagenes/imagenes-mas-lindas/Apoyo 2.jpg', descripcion: 'Martes de poesía en el Programa Huila Lee y escribe, año 2018.' },
+        { src: '/imagenes/imagenes-mas-lindas/Apoyo 6.jpg', descripcion: '' },
+        { src: '/imagenes/imagenes-mas-lindas/Apoyo 7.jpg', descripcion: 'Abrazos y poesía en Martes de Poesía' },
+        { src: '/imagenes/imagenes-mas-lindas/Apoyo 10.jpg', descripcion: 'Sede la Esperanza, Institución Educativa Roberto Suaza Marquinez, año 2013' },
+        { src: '/imagenes/imagenes-mas-lindas/Apoyo 15.jpg', descripcion: 'Merienda poética a la hora del descanso, año 2016.' },
+        { src: '/imagenes/imagenes-mas-lindas/Apoyo 17.jpg', descripcion: 'Cuba, 2015. Jornadas de literatura Infantil y Juvenil . Por primera vez Martes de Poesía fuera del país. ' },
+        { src: '/imagenes/imagenes-mas-lindas/Apoyo 22.jpg', descripcion: 'Algún encuentro con la poesía, en la  I.E. Roberto Suaza Marquinez' },
+        { src: '/imagenes/imagenes-mas-lindas/Apoyo 27.jpg', descripcion: 'Foro educativo municipal, de la Institución Educativa Roberto Suaza Marquinez. 2014.' },
+      ],
+    },
   ];
 
-  // Efecto para cambiar la imagen automáticamente cada 1 segundo
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-    }, 1000); // Cambia cada segundo
-
-    return () => clearInterval(interval); // Limpiar el intervalo cuando se desmonta el componente
-  }, [images.length]);
-
-  const [currentImage, setCurrentImage] = useState(0); // Cambié el estado a una constante actualizable
-  const [cartaSeleccionada, setCartaSeleccionada] = useState(null);
-
-
   return (
-    <>
-    <Nav />
-    <div className="w-full max-w-4xl mx-auto py-10 bg-[#fffff9]">
-      <>
-        <Swiper
-          slidesPerView={3}
-          grid={{
-            rows: 2,
-          }}
-          spaceBetween={30}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Grid, Pagination]}
-          className="mySwiper"
-        >
-          {/* Mapeo dinámico de las imágenes */}
-          {images.map((src, index) => (
-            <SwiperSlide key={index}>
-              <Image src={src} alt={`Imagen ${index + 1}`} width={1000} height={1000} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </>
+
+    <div className='bg-[#fffff3]'>
+      <Navigation />
+      <div className="container mx-auto px-4 py-8 pt-[11rem]">
+        {secciones.map((seccion, index) => (
+          <div key={index} className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">{seccion.titulo}</h2>
+            {/* Diseño Masonry en móviles y una sola fila en escritorio */}
+            <div className="columns-1 md:columns-2 gap-4">
+              {seccion.imagenes.map((imagen, i) => (
+                <div key={i} className="break-inside-avoid rounded-lg overflow-hidden">
+                  <Image
+                    src={imagen.src}
+                    alt={imagen.descripcion}
+                    width={300}
+                    height={200}
+                    className="rounded-lg w-full"
+                  />
+                  <p className="mt-2 text-gray-600 text-center">{imagen.descripcion}</p>
+                </div>
+              ))}
+            </div>
+
+          </div>
+        ))}
+      </div>
     </div>
-    <Descargar />
-    </>
 
   );
 };

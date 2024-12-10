@@ -33,7 +33,7 @@ const Contenido = () => {
             </div>
 
             {/* LINKS */}
-            <div className="bg-[url('/letter-background.png')] bg-cover bg-center fixed bottom-0 w-full flex items-center border-y border-black shadow-lg h-14">
+            <div className="bg-[url('/letter-background.png')] bg-cover bg-center fixed bottom-0 w-full flex justify-center items-center border-y border-black shadow-lg h-14">
                 {/* Botón de flecha izquierda */}
                 <button
                     onClick={scrollLeft}
@@ -42,7 +42,7 @@ const Contenido = () => {
                     <img
                         src="/arrow-prev-small.svg"
                         alt="Scroll Left"
-                        className="w-20 h-20"
+                        className="w-20 h-20 md:hidden"
                     />
                 </button>
 
@@ -76,7 +76,7 @@ const Contenido = () => {
                     <img
                         src="/arrow-next-small.svg"
                         alt="Scroll Right"
-                        className="w-20 h-20"
+                        className="w-20 h-20 md:hidden"
                     />
                 </button>
             </div>
