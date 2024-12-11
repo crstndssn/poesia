@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const icons = {
   pdf: '/icons/repo.svg', // Ícono para PDF
@@ -13,8 +13,22 @@ const ResourceList = ({ year, resources = {} }) => {
   const handleOpenModal = (category) => setActiveCategory(category);
   const handleCloseModal = () => setActiveCategory(null);
 
+  useEffect(() => {
+    // Deshabilitar el scroll del fondo cuando el modal está activo
+    if (activeCategory) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+
+    // Limpiar el estilo al desmontar
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [activeCategory]);
+
   return (
-    <div className="flex gap-3 mt-5">
+    <div className="flex gap-3 mt-5 relative">
       {/* Botones por categoría */}
       {Object.entries(resources).map(([type, urls]) => (
         Array.isArray(urls) && urls.length > 0 && (
@@ -31,8 +45,8 @@ const ResourceList = ({ year, resources = {} }) => {
 
       {/* Modal para la categoría activa */}
       {activeCategory && (
-        <div className="fixed top-0 left-0 right-0 bg-gray-900 bg-opacity-50 z-50 flex items-center justify-center overflow-auto">
-          <div className="bg-[#fffff3] p-6 w-full shadow-lg relative min-h-screen">
+        <div className="fixed top-0 left-0 right-0 bottom-0 bg-gray-900 bg-opacity-50 z-50 flex items-center justify-center">
+          <div className="relative bg-[#fffff3] p-6 max-h-[90vh] w-full max-w-2xl overflow-y-auto">
             <button
               className="absolute top-2 right-2 text-gray-600 hover:text-gray-800"
               onClick={handleCloseModal}
@@ -42,7 +56,7 @@ const ResourceList = ({ year, resources = {} }) => {
             <h2 className="text-lg font-bold mb-4">
               {activeCategory.toUpperCase()} del año {year}
             </h2>
-            <div className="mt-[50px] grid grid-cols-3">
+            <div className="space-y-4">
               {resources[activeCategory]?.map((url, index) => {
                 if (activeCategory === 'pdf') {
                   return (

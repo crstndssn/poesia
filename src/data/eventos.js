@@ -93,17 +93,18 @@ const eventos = [
     year: 2011,
     description: 'De la misma manera en que el agua se transforma, Martes de Poesía planea se extiende a los hogares comunitarios en el 2011. Los estudiantes del grado décimo y once visitan a niñas y niños como parte de su Servicio Social Estudiantil para jugar poesía. El resultado de este trabajo es el desarrollo del Primer festival de poesía de los hogares comunitarios y en los siguientes años tendría 4 versiones.<br/>En este año, algún abuelo mientras escuchaba la radio podría estar siendo conmovido por una Gotica de poesía, puesto que fueron grabados por estudiantes y se transmitieron por la radio Comunitaria del Municipio del Hobo.<br/>Entrado el 2011, se  realiza la siembra de arboles bautizados con el nombre de un autor y sus poemas, en la sede La Esperanza de la I.E, Roberto Suaza Marquinez del Hobo, estrategia a la que se llamó Bosque de Poesía para encontrarnos.',
     resources: {
-      pdfs: ['/poema1998.pdf'],
-      images: ['/foto2005.jpg'],
-      videos: []
+      pdfs: [],
+      images: ['/tiempo/2011/1.jpg','/tiempo/2011/2.jpg','/tiempo/2011/3.jpg'],
+      videos: ['/tiempo/2011/6.mp4'],
+      audios: ['/tiempo/2011/5.mp3']
     }
   },
   {
     year: 2012,
     description: 'En el 2012 se gradúa la primera promoción de bachilleres de MARTES DE POESÍA, que estuvo vinculado desde la primaria hasta el grado undécimo, en la Institución Educativa Roberto Suaza Marquinez. La ceremonia de grado se convirtió en un recital poético cuando les fue entregado, además del diploma y su acta de grado, el libro  CREO EN LA POESÍA, impreso artesanalmente por Amparo Andrade, con uno de los textos de cada uno de los graduandos, tallereados en la Experiencia.',
     resources: {
-      pdfs: ['/poema1998.pdf'],
-      images: ['/foto2005.jpg'],
+      pdfs: ['/tiempo/2012/3.pdf'],
+      images: ['/tiempo/2012/1.jpg', '/tiempo/2012/2.jpg'],
       videos: []
     }
   },
@@ -111,35 +112,35 @@ const eventos = [
     year: 2013,
     description: '"MARTES DE POESÍA: Una alternativa para construirse como sujetos en un país en medio del conflicto político militar" fue la tesis de grado de Amparo, en la Maestría en Conflicto, Territorio y Cultura.  En esta crónica pedagógica se presentan los puntos de giro de MARTES DE POESÍA y su pertinencia en un contexto de guerra.<br/>En este año también se expanden las Goticas de Poesía en Radio Universidad Surcolombiana con lo que se escucha por toda la red latinoamericana de emisoras universitarias.',
     resources: {
-      pdfs: ['/poema1998.pdf'],
+      pdfs: [],
       images: ['/tiempo/2007/1..jpg', '/tiempo/2007/2..jpg'],
-      videos: []
+      videos: ['/tiempo/2007/3.mp4'],
     }
   },
   {
     year: 2016,
-    description: 'El Gobierno Departamental del Huila creó el programa "Huila lee y escribe"...',
+    description: 'El Gobierno Departamental del Huila creó el programa "Huila lee y escribe", al que fue invitada Amparo Andrade, para que compartiera su experiencia de MARTES DE POESÍA en 30 de los 36 municipios del Huila. Invitando a las poblaciones a jugar y crear poesía, desde el año 2016.',
     resources: {
-      pdfs: ['/poema1998.pdf'],
-      images: ['/foto2005.jpg'],
+      pdfs: ['/tiempo/2016/6..pdf'],
+      images: ['/tiempo/2016/1.jpg', '/tiempo/2016/2.jpg', '/tiempo/2016/3.jpg', '/tiempo/2016/4.jpg', '/tiempo/2016/5.jpg'],
       videos: []
     }
   },
   {
     year: 2018,
-    description: 'En la conmemoración de los 10 años de la Biblioteca Pública Municipal "Douglas Hernán Bautista Tovar"...',
+    description: 'En la conmemoración de los 10 años de la Biblioteca Pública Municipal "Douglas Hernán Bautista Tovar" del municipio de El Hobo, año 2018  se presenta y se entrega a la comunidad hobeña el libro CREO EN LA POESÍA, ahora impreso en un formato editoriral. También se presenta al público en la Ferira Internacional del Libro en Bogotá y enla Biblioteca del Banco de la República, seccional Neiva.',
     resources: {
       pdfs: ['/poema1998.pdf'],
-      images: ['/tiempo/2018/1..jpg', '/tiempo/2018/1..jpg', '/tiempo/2018/2..jpg', '/tiempo/2018/3..jpg', '/tiempo/2018/4..jpg', '/tiempo/2018/5..jpg', '/tiempo/2018/6..jpeg'],
+      images: ['/tiempo/2018/1.jpeg', '/tiempo/2018/1.jpg', '/tiempo/2018/2.jpg', '/tiempo/2018/3.jpg', '/tiempo/2018/4.jpg', '/tiempo/2018/5.jpg', '/tiempo/2018/6.jpeg'],
       videos: []
     }
   },
   {
     year: 2019,
-    description: 'MARTES DE POESÍA es ahora parte de la plataforma mundial TEDx...',
+    description: 'MARTES DE POESÍA es ahora parte de la plataforma mundial TEDx, con la charla VIVIR-SE EN POESÍA. UNA OPORTUNIDAD.  Allí, entre muchas otras, hace parte de las "ideas dignas de ser difundidas"- como lo plantea la organización.  Con ello, esta experiencia pedagógica  traspasa nuevas fronteras y permanece disponible para ser escuchada',
     resources: {
-      pdfs: ['/poema1998.pdf'],
-      images: ['/tiempo/2019/1..jpg'],
+      pdfs: [],
+      images: ['/tiempo/2019/1.jpeg'],
       videos: []
     }
   }
