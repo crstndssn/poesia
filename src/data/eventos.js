@@ -66,8 +66,8 @@ const eventos = [
     year: 2008,
     description: 'La Secretaría de Educación Departamental del Huila, en el 2008 desarrolla la estrategia Maestros de Maestros, siendo Amparo invitada a compartir su sensibilidad pedagógica en espacios de formación de docentes del Huila.<br/>A su vez, en primaria se avanza en la fase de sensibilización, mientras en paralelo, en bachillerato se desarrolla la fase de producción poética, en la que es protagónicpo el papel de los participantes volviendo a sus escritos y comentando sus logros.',
     resources: {
-      pdfs: ['/poema1998.pdf'],
-      images: ['/foto2005.jpg'],
+      pdfs: ['/tiempo/2008/1.pdf'],
+      images: [],
       videos: []
     }
   },
@@ -75,8 +75,8 @@ const eventos = [
     year: 2009,
     description: 'Se continúa la reflexión sobre los procesos poéticos y se comparte en la Revista "Memorias de Cotorreo" de La Asociaón Huilense de Profesores de Español y Literatura (AHPEL)',
     resources: {
-      pdfs: ['/poema1998.pdf'],
-      images: ['/foto2005.jpg'],
+      pdfs: ['/tiempo/2009/1..pdf'],
+      images: [],
       videos: []
     }
   },
@@ -84,9 +84,10 @@ const eventos = [
     year: 2010,
     description: 'El maestro Víctor Negrete,  lider en Investigación Acción Participativa, de la Universidad de Montería,  visitó la experiencia como docente invitado de la Maestría en Conflicto, Territorio y Cultura. Los participantes de bachillerato manifiestan su deseo de proyectar las vivencias de Martes de Poesía, y en la conversación definen tres formas: 1, Realizar su Servicio Social Estudiantil con los hogares comunitarios en Martes de Poesía. 2. Grabar unas GOTICAS DE POESÍA  con las voces de los niños para hacer partícipe a la comunidad y transmitirlas a través de la Emisora Comunitaria. 3. Sembrar un Bosque de Poesía para encontrarnos.',
     resources: {
-      pdfs: ['/poema1998.pdf'],
-      images: ['/foto2005.jpg'],
-      videos: []
+      pdfs: [],
+      images: ['/tiempo/2010/1.jpg', '/tiempo/2010/2.jpg', '/tiempo/2010/3.jpg'],
+      videos: ['/tiempo/2010/5.mp3'],
+      audio: ['/tiempo/2010/6.mp4']
     }
   },
   {
@@ -113,8 +114,8 @@ const eventos = [
     description: '"MARTES DE POESÍA: Una alternativa para construirse como sujetos en un país en medio del conflicto político militar" fue la tesis de grado de Amparo, en la Maestría en Conflicto, Territorio y Cultura.  En esta crónica pedagógica se presentan los puntos de giro de MARTES DE POESÍA y su pertinencia en un contexto de guerra.<br/>En este año también se expanden las Goticas de Poesía en Radio Universidad Surcolombiana con lo que se escucha por toda la red latinoamericana de emisoras universitarias.',
     resources: {
       pdfs: [],
-      images: ['/tiempo/2007/1..jpg', '/tiempo/2007/2..jpg'],
-      videos: ['/tiempo/2007/3.mp4'],
+      images: ['/tiempo/2013/1..jpg', '/tiempo/2013/2..jpg'],
+      videos: ['/tiempo/2013/3.mp4', '/tiempo/2013/4.mp4'],
     }
   },
   {
@@ -130,8 +131,8 @@ const eventos = [
     year: 2018,
     description: 'En la conmemoración de los 10 años de la Biblioteca Pública Municipal "Douglas Hernán Bautista Tovar" del municipio de El Hobo, año 2018  se presenta y se entrega a la comunidad hobeña el libro CREO EN LA POESÍA, ahora impreso en un formato editoriral. También se presenta al público en la Ferira Internacional del Libro en Bogotá y enla Biblioteca del Banco de la República, seccional Neiva.',
     resources: {
-      pdfs: ['/poema1998.pdf'],
-      images: ['/tiempo/2018/1.jpeg', '/tiempo/2018/1.jpg', '/tiempo/2018/2.jpg', '/tiempo/2018/3.jpg', '/tiempo/2018/4.jpg', '/tiempo/2018/5.jpg', '/tiempo/2018/6.jpeg'],
+      pdfs: [],
+      images: ['/tiempo/2018/1.jpg', '/tiempo/2018/2.jpg', '/tiempo/2018/3.jpg', '/tiempo/2018/4.jpg', '/tiempo/2018/5.jpg', '/tiempo/2018/6.jpeg'],
       videos: []
     }
   },
