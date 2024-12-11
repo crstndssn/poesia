@@ -34,7 +34,7 @@ const Imagenes = () => {
       ],
     },
     {
-      titulo: 'Resultados',
+      titulo: 'Imágenes mas lindas',
       imagenes: [
         { src: '/imagenes/imagenes-mas-lindas/Apoyo 2.jpg', descripcion: 'Martes de poesía en el Programa Huila Lee y escribe, año 2018.' },
         { src: '/imagenes/imagenes-mas-lindas/Apoyo 6.jpg', descripcion: '' },
@@ -44,6 +44,16 @@ const Imagenes = () => {
         { src: '/imagenes/imagenes-mas-lindas/Apoyo 17.jpg', descripcion: 'Cuba, 2015. Jornadas de literatura Infantil y Juvenil . Por primera vez Martes de Poesía fuera del país. ' },
         { src: '/imagenes/imagenes-mas-lindas/Apoyo 22.jpg', descripcion: 'Algún encuentro con la poesía, en la  I.E. Roberto Suaza Marquinez' },
         { src: '/imagenes/imagenes-mas-lindas/Apoyo 27.jpg', descripcion: 'Foro educativo municipal, de la Institución Educativa Roberto Suaza Marquinez. 2014.' },
+      ],
+    },
+    {
+      titulo: 'Grupo Focal',
+      imagenes: [
+        { src: '/imagenes/grupo-focal/1.jpeg', descripcion: 'Taller de Grupo Focal, investigación beca del ministerio de las culturas, el arte y los saberes 2024' },
+        { src: '/imagenes/grupo-focal/2.jpeg', descripcion: '' },
+        { src: '/imagenes/grupo-focal/3.jpeg', descripcion: '' },
+        { src: '/imagenes/grupo-focal/4.jpeg', descripcion: '' },
+        { src: '/imagenes/grupo-focal/5.jpeg', descripcion: '' }
       ],
     },
   ];
