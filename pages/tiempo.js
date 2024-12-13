@@ -17,9 +17,9 @@ const Tiempo = () => {
   });
 
   return (
-    <div className="min-h-screen flex items-start justify-center bg-[#fffff9] bg-[url('/all-books.png')] bg-repeat-x bg-cover bg-center">
+    <div className="min-h-screen flex items-start justify-center bg-[#fffff9] bg-[url('/tiempo-bg.png')] bg-contain bg-center">
       <Navigation />
-      <div className="container mx-auto min-h-screen pt-32 px-4">
+      <div className="container mx-auto min-h-screen pt-48 px-20 md:px-48">
         {/* Botones para ordenar */}
         <div className="flex justify-between mb-4 gap-3">
           <button

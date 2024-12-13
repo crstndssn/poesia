@@ -30,7 +30,7 @@ const Carta1 = () => {
         Walsh en
         {" "}
         <ContentPopUp
-          triggerClass="underline pointer"
+          triggerClass="underline cursor-pointer"
           triggerText="el poema que tu memoria trajo a nuestro encuentro."
           content={[
             {
