@@ -35,7 +35,7 @@ const FlipbookViewerTwo = () => {
             left: 0,
             top: 0,
           }}
-          src="https://online.fliphtml5.com/ugitn/ggvn/"
+          src="https://online.fliphtml5.com/ugitn/atrk/"
           seamless="seamless"
           scrolling="no"
           frameBorder="0"

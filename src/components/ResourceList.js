@@ -7,6 +7,17 @@ const icons = {
   video: '/icons/video.svg', // Ícono para videos
 };
 
+const isYouTubeUrl = (url) => {
+  const youtubeRegex = /(?:https?:\/\/)?(?:www\.|m\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
+  return youtubeRegex.test(url);
+};
+
+const extractYouTubeId = (url) => {
+  const youtubeRegex = /(?:https?:\/\/)?(?:www\.|m\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
+  const match = url.match(youtubeRegex);
+  return match ? match[1] : null;
+};
+
 const ResourceList = ({ year, resources = {} }) => {
   const [activeCategory, setActiveCategory] = useState(null);
 
@@ -80,6 +91,22 @@ const ResourceList = ({ year, resources = {} }) => {
                     />
                   );
                 } else if (activeCategory === 'video') {
+                  if (isYouTubeUrl(url)) {
+                    const videoId = extractYouTubeId(url);
+                    return (
+                      <iframe
+                        key={index}
+                        width="100%"
+                        height="315"
+                        src={`https://www.youtube.com/embed/${videoId}`}
+                        title={`YouTube video ${index + 1}`}
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="w-full h-auto min-h-[500px]"
+                      ></iframe>
+                    );
+                  }
                   return (
                     <a
                       key={index}

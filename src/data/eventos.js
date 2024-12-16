@@ -86,8 +86,8 @@ const eventos = [
     resources: {
       pdfs: [],
       images: ['/tiempo/2010/1.jpg', '/tiempo/2010/2.jpg', '/tiempo/2010/3.jpg'],
-      videos: ['/tiempo/2010/5.mp3'],
-      audio: ['/tiempo/2010/6.mp4']
+      videos: [],
+      audio: []
     }
   },
   {
@@ -142,7 +142,7 @@ const eventos = [
     resources: {
       pdfs: [],
       images: ['/tiempo/2019/1.jpeg'],
-      videos: []
+      videos: ['https://youtu.be/ykzC-S0hcrs']
     }
   }
 ];
