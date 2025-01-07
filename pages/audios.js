@@ -17,7 +17,7 @@ const audios = () => {
   return (
     <>
       <Navigation/>
-      <div className="min-h-screen flex items-start justify-center bg-[#fffff9] bg-[url('/29-1.png')] bg-repeat-x bg-cover bg-bottom pt-48">
+      <div className="min-h-screen flex items-start justify-center bg-[#fffff9] bg-[url('/29-1.png')] bg-repeat-x bg-cover bg-bottom pt-24 pb-12 md:pt-48">
         <AudioList />
       </div>
     </>

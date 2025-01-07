@@ -53,14 +53,35 @@ const Imagenes = () => {
         { src: '/imagenes/grupo-focal/2.jpeg', descripcion: '' },
         { src: '/imagenes/grupo-focal/3.jpeg', descripcion: '' },
         { src: '/imagenes/grupo-focal/4.jpeg', descripcion: '' },
-        { src: '/imagenes/grupo-focal/5.jpeg', descripcion: '' }
+        { src: '/imagenes/grupo-focal/5.jpeg', descripcion: '' },
+        { src: '/imagenes/grupo-focal/6.jpeg', descripcion: '' },
+        { src: '/imagenes/grupo-focal/7.jpeg', descripcion: '' },
+        { src: '/imagenes/grupo-focal/8.jpeg', descripcion: '' },
+        { src: '/imagenes/grupo-focal/9.jpeg', descripcion: '' },
+        { src: '/imagenes/grupo-focal/10.jpeg', descripcion: '' },
+        { src: '/imagenes/grupo-focal/11.jpeg', descripcion: '' },
+        { src: '/imagenes/grupo-focal/12.jpeg', descripcion: '' },
+        { src: '/imagenes/grupo-focal/13.jpeg', descripcion: '' },
+        { src: '/imagenes/grupo-focal/14.jpeg', descripcion: '' },
+        { src: '/imagenes/grupo-focal/15.jpeg', descripcion: '' },
+        { src: '/imagenes/grupo-focal/16.jpeg', descripcion: '' },
+        { src: '/imagenes/grupo-focal/17.jpeg', descripcion: '' },
       ],
     },
+    {
+      titulo: 'Entrevista Quesada',
+      imagenes: [
+        { src: '/imagenes/entrevista-quesada/1.jpeg', descripcion: '' },
+        { src: '/imagenes/entrevista-quesada/2.jpeg', descripcion: '' },
+        { src: '/imagenes/entrevista-quesada/3.jpeg', descripcion: '' }
+      ],
+    },
+
   ];
 
   return (
 
-    <div className='bg-[#fffff3]'>
+    <div className="bg-[#fffff3] bg-[url('/27.png')] bg-contain bg-center">
       <Navigation />
       <div className="container mx-auto px-4 py-8 pt-[11rem]">
         {secciones.map((seccion, index) => (
@@ -73,8 +94,8 @@ const Imagenes = () => {
                   <Image
                     src={imagen.src}
                     alt={imagen.descripcion}
-                    width={300}
-                    height={200}
+                    width={2000}
+                    height={1000}
                     className="rounded-lg w-full"
                   />
                   <p className="mt-2 text-gray-600 text-center">{imagen.descripcion}</p>
