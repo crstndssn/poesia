@@ -1,6 +1,7 @@
 import React from 'react'
 import '../globals.css'
 import ContentPopUp from '@/components/ContentPopUp'
+import WhatsAppButton from '@/components/whatsappbutton'
 
 const carta6 = () => {
   return (
@@ -85,6 +86,51 @@ Trabajó con Orlando Fals Borda en Investigación Acción Participativa durante 
 
         Amparo.<br /><br />
       </p>
+
+      {/* REFERENCIAS */}
+      <div className="border-t border-black mt-7 py-4 mb-3">
+          {/* referencia */}
+          <div className="flex">
+              <span className="text-xs mr-2">
+                1
+              </span>
+              <p className="text-lg">
+                Nueva York (EEUU) , Perú, Chile, Argentina, México y muchos lugares de Colombia.
+              </p>
+          </div>
+          {/* referencia */}
+          <div className="flex">
+              <span className="text-xs mr-2">
+                2
+              </span>
+              <p className="text-lg">
+                https://profegonzalez.blogspot.com/2019/06/mala-fama.html
+              </p>
+          </div>
+          {/* referencia */}
+          <div className="flex">
+              <span className="text-xs mr-2">
+                3
+              </span>
+              <p className="text-lg">
+                Docente invitado a la Maestría en Conflicto, Territorio y Cultura de la Universidad Surcolombiana.
+                Trabajó con Orlando Fals Borda en Investigación Acción Participativa durante muchos años.
+              </p>
+          </div>
+          {/* referencia */}
+          <div className="flex">
+              <span className="text-xs mr-2">
+                4
+              </span>
+              <p className="text-lg">
+                Hobeña egresada del programa de Comunicación Social y periodismo, de la Universidad
+                Surcolombiana.
+              </p>
+          </div>
+      </div>
+
+      <WhatsAppButton/>
+      
     </div>
   )
 }

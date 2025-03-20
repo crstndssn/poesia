@@ -1,6 +1,7 @@
 import React from 'react'
 import '../globals.css'
 import ContentPopUp from '@/components/ContentPopUp'
+import WhatsAppButton from '@/components/whatsappbutton'
 
 const carta5 = () => {
   return (
@@ -206,7 +207,56 @@ y no habló la acelga
 
       <p className="text-lg md:text-xl">Un abrazo de luciérnagas en una noche oscura.</p><br /><br />
       <p className="text-lg md:text-xl">Amparo.</p><br /><br />
+      
+
+      {/* REFERENCIAS */}
+      <div className="border-t border-black mt-7 py-4 mb-3">
+          {/* referencia */}
+          <div className="flex">
+              <span className="text-xs mr-2">
+                  1
+              </span>
+              <p className="text-lg">
+                Talleres desarrollados con el equipo de docentes cada año:  Sentir la poesía con el cuerpo (2004),
+                Narración oral, magia para la escuela, y El cuerpo en los procesos de aprendizaje (2005), Leer
+                poesía, un goce que es un descubrimiento y Poesía, voz y cuerpo: un camino a la reconciliación del
+                hombre consigo mismo (2007)
+              </p>
+          </div>
+          {/* referencia */}
+          <div className="flex">
+              <span className="text-xs mr-2">
+                  2
+              </span>
+              <p className="text-lg">
+                En la bibliografía puedes encontrar las referencias
+              </p>
+          </div>
+          {/* referencia */}
+          <div className="flex">
+              <span className="text-xs mr-2">
+                3
+              </span>
+              <p className="text-lg">
+                Este verso hace parte del poema SE MATÓ UN TOMATE, de Elsa Bornemann.
+              </p>
+          </div>
+          {/* referencia */}
+          <div className="flex">
+              <span className="text-xs mr-2">
+                4
+              </span>
+              <p className="text-lg">
+                https://aprender.entrerios.edu.ar/wp-content/uploads/2021/10/Poema-Se-mato-un-tomate-.pdf
+              </p>
+          </div>
+      </div>
+
+      <WhatsAppButton/>
+
     </div>
+
+
   )
 }
 

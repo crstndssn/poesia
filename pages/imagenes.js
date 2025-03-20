@@ -83,10 +83,15 @@ const Imagenes = () => {
 
     <div className="bg-[#fffff3] bg-[url('/27.png')] bg-contain bg-center">
       <Navigation />
+  
       <div className="container mx-auto px-4 py-8 pt-[11rem]">
+      <div className='mb-14 text-center'>
+          <h1 className='font-bold text-4xl mb-3'>MEMORIA VISUAL</h1>
+          <p className='text-xl'>Fotografías de las actividades pedagógicas y de promoción de la Experiencia</p>
+      </div>
         {secciones.map((seccion, index) => (
           <div key={index} className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">{seccion.titulo}</h2>
+            {/* <h2 className="text-2xl font-bold text-gray-800 mb-4">{seccion.titulo}</h2> */}
             {/* Diseño Masonry en móviles y una sola fila en escritorio */}
             <div className="columns-1 md:columns-2 gap-4">
               {seccion.imagenes.map((imagen, i) => (
@@ -98,7 +103,7 @@ const Imagenes = () => {
                     height={1000}
                     className="rounded-lg w-full"
                   />
-                  <p className="mt-2 text-gray-600 text-center">{imagen.descripcion}</p>
+                  <p className="mt-2 text-black text-center">{imagen.descripcion}</p>
                 </div>
               ))}
             </div>

@@ -78,10 +78,10 @@ const Navigation = () => {
                         CARTAS
                     </Link>
                     <Link onClick={toggleMenu} href="/libro" passHref className={`flex justify-center items-center flex-col text-2xl md:text-3xl p-3 md:p-7 md:pt-8 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
-                        LIBRO <span className="text-base md:text-xl m-0">érase una vez la poesía</span>
+                        LIBRO <span className="text-base md:text-xl m-0">Érase una vez la poesía</span>
                     </Link>
                     <Link onClick={toggleMenu} href="/creo-en-la-poesia" passHref className={`flex justify-center items-center flex-col text-2xl md:text-3xl p-3 md:p-7 md:pt-8 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
-                        LIBRO  <span className="text-xl m-0">creo en la poesía</span>
+                        LIBRO  <span className="text-xl m-0">Creo en la poesía</span>
                     </Link>
                     <Link onClick={toggleMenu} href="/imagenes" passHref className={`flex justify-center items-center text-2xl md:text-3xl p-3 md:p-7 md:pt-8 text-[#FFFFF9] transition-opacity duration-100 border border-[#FFFFF9] rounded-lg ${isOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
                         IMAGENES

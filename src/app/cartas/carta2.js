@@ -1,3 +1,4 @@
+import WhatsAppButton from '@/components/whatsappbutton'
 import '../globals.css'
 
 const carta2 = () => {
@@ -47,6 +48,32 @@ const carta2 = () => {
                 Amparo
 
             </p>
+
+
+            {/* REFERENCIAS */}
+            <div className="border-t border-black mt-7 py-4 mb-3">
+                 {/* referencia */}
+                <div className="flex">
+                    <span className="text-xs mr-2">
+                        1
+                    </span>
+                    <p className="text-lg">
+                        Antología de poemas compartidos  durante la experiencia de Martes de Poesía
+                    </p>
+                </div>
+                 {/* referencia */}
+                <div className="flex">
+                    <span className="text-xs mr-2">
+                        2
+                    </span>
+                    <p className="text-lg">
+                        ANDRICAÍN, Sergio y RODRÍGUEZ, Antonio Orlando. Escuela y poesía ¿Y qué hago con el poema? Buenos Aires: Lugar Editorial, 2003.  144 p.p.
+                    </p>
+                </div>
+            </div>
+
+            <WhatsAppButton/>
+
         </div>
     )
 }

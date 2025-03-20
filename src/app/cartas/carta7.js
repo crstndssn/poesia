@@ -1,6 +1,7 @@
 import React from 'react'
 import '../globals.css'
 import ContentPopUp from '@/components/ContentPopUp'
+import WhatsAppButton from '@/components/whatsappbutton'
 
 const carta7 = () => {
   return (
@@ -112,6 +113,53 @@ const carta7 = () => {
         <br />
         <br />
       </div>
+      
+      {/* REFERENCIAS */}
+      <div className="border-t border-black mt-7 py-4 mb-3">
+          {/* referencia */}
+          <div className="flex">
+              <span className="text-xs mr-2">
+              1
+              </span>
+              <p className="text-lg">
+              “De provocación. de poder exteriorizar algo que tuvieran como oculto. que los niños
+              lograran interiorizar sus problemáticas, de conectarlos con la familia, de hacerle vivir esos
+              sentimientos y muchos más de momentos gratos, no de nostalgia, sino de hacerlos como
+              activar esa relación con la familia y con el entorno” Entrevista con Gema de Jesús Trujillo,
+              magister en Conflicto,Territorio y Cultura. Agosto 11 de 2024. Fue jurado de la tesis
+              Exploraciones para autorreconocerse en medio del conflicto político militar colombiano
+              Crónica pedagógica sobre el taller Martes de Poesía en la Institución Educativa Roberto
+              Suaza Marquínez del Hobo (Huila), entre 2003 y 2012, de Amparo Andrade Loaiza
+              (Universidad Surcolombiana)
+              </p>
+          </div>
+          {/* referencia */}
+          <div className="flex">
+              <span className="text-xs mr-2">
+                2
+              </span>
+              <p className="text-lg">
+              Entrevista a Jorge Alfredo Quesada, en el Hobo,el 22 de septiembre de 2024
+              </p>
+          </div>
+          {/* referencia */}
+          <div className="flex">
+              <span className="text-xs mr-2">
+                3
+              </span>
+              <p className="text-lg">
+              Comentarios presentados por los participantes en el encuentro del grupo focal, en la
+              invesitigación desarrollada en el marco de la Beca del Ministerio de las Culturas, las Artes y los
+              saberes 2024. Los nombres de chicas y chicos que aparecen sin apellido, corresponden a quienes
+              fueron participantes de la Experiencia de Martes de Poesía en el período comprendido entre 2003
+              y 2014
+              </p>
+          </div>
+      </div>
+
+
+      <WhatsAppButton/>
+
     </div>
   )
 }

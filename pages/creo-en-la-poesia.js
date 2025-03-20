@@ -6,6 +6,10 @@ const FlipbookViewerTwo = () => {
   return (
     <div className="py-10 bg-[#f5deb3] min-h-screen relative">
       <Navigation />
+      <div className='mb-14 text-center mt-36'>
+          <h1 className='font-bold text-4xl mb-3'>CREO EN LA POESÍA</h1>
+          <p className='text-xl'>Producciones  poéticos de los participantes en esta Experiencia</p>
+      </div>
       <div
         style={{
           position: "relative",
@@ -14,18 +18,6 @@ const FlipbookViewerTwo = () => {
           height: 0,
         }}
       >
-        {/* Superposición para ocultar elementos */}
-        <div
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "30%",
-            height: "72px", // Altura del logo a cubrir
-            backgroundColor: "#f5deb3", // Color del fondo para simular el mismo diseño
-            zIndex: 7,
-          }}
-        ></div>
         <iframe
           style={{
             position: "absolute",

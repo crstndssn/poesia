@@ -1,5 +1,6 @@
 import React from 'react'
 import '../globals.css'
+import WhatsAppButton from '@/components/whatsappbutton'
 
 const carta5 = () => {
     return (
@@ -53,6 +54,31 @@ const carta5 = () => {
                 Amparo
 
             </p>
+
+            {/* REFERENCIAS */}
+            <div className="border-t border-black mt-7 py-4 mb-3">
+                 {/* referencia */}
+                <div className="flex">
+                    <span className="text-xs mr-2">
+                        1
+                    </span>
+                    <p className="text-lg">
+                        Fragmento del poema SINFÍN, de Mirta Aguirre.
+                    </p>
+                </div>
+                 {/* referencia */}
+                <div className="flex">
+                    <span className="text-xs mr-2">
+                        2
+                    </span>
+                    <p className="text-lg">
+                        Carta de Jaminser Vela en donde cuenta lo que significa para él Martes de Poesía.
+                    </p>
+                </div>
+            </div>
+
+            <WhatsAppButton/>
+
         </div>
     )
 }

@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import Popup from "../../components/Popup"; // Importa el componente Popup
 import ContentPopUp from "../../components/ContentPopUp"; // Importa el componente Popup
 import "../globals.css";
+import Image from "next/image";
+import WhatsAppButton from "@/components/whatsappbutton";
 
 const Carta1 = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -140,6 +142,23 @@ const Carta1 = () => {
 
         Amparo.
       </p>
+
+      {/* REFERENCIAS */}
+      <div className="border-t border-black mt-7 py-4 mb-3">
+        {/* referencia */}
+        <div className="flex">
+          <span className="text-xs mr-2">
+            1
+          </span>
+          <p className="text-lg">
+            “El sol no tiene bolsillos / La luna no tiene mar. / ¿Por qué en un mundo tan grande /habrá tan poco lugar?”, del poema de <i>María Elena Walsh</i> <b>EL SOL NO TIENE BOLSILLOS.</b>
+          </p>
+        </div>
+      </div>
+
+      
+      <WhatsAppButton/>
+
 
       {/* Componente Popup */}
       <Popup
