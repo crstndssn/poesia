@@ -51,14 +51,6 @@ const Carta1 = () => {
       </p>
       <br />
       <p className="text-lg md:text-xl">
-        Ahora que tienes el proyecto de disfrutar la tarea de ser maestro,  escribo estas cartas
-        para tí y para las niñas y niños que fueron parte de la experiencia de MARTES DE
-        POESÍA y que hoy, como adultos,  sueñan y trabajan por construir un mundo en el que
-        todos tengamos un  lugar, como aquel por el que pregunta María Elena Walsh en el
-        poema que tu memoria trajo a nuestro encuentro 1
-      </p>
-      <br />
-      <p className="text-lg md:text-xl">
         Los estudiantes de la I.E Roberto Suaza Marquínez, a la que tú perteneciste, me llevaron
         al segundo piso de la planta física  para mostrarme, según ellos, el aeropuerto, porque
         desde allí podía verse el sector de la carretera nacional en donde hicieron aterrizar el
