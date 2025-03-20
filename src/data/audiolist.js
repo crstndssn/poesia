@@ -13,14 +13,13 @@ const AudioList = () => {
     { id: 7, route: "/audios/new/7-Qué-quiere-el-lobito.mp3", description: "¿Qué quiere el lobito?" },
     { id: 8, route: "/audios/new/8-Sigue-tu-caminito.mp3", description: "Sigue tu camnio" },
     { id: 9, route: "/audios/new/9-Sombra-en-el-agua.mp3", description: "Sombra en el agua" },
-    { id: 10, route: "/audios/new/10-Tapíz.mp3", description: "Tapíz"}
+    { id: 10, route: "/audios/new/10-Tapíz.mp3", description: "Tapíz"},
+    { id: 11, route: "/audios/new/11-Tarde-en-la-mesa.mp3", description: "Poesía como herramienta educativa"},
   ];
 
   return (
     <div className="w-full flex justify-center items-center container mx-auto mt-10 px-4 Z-10">
-
       <ul className="w-4/5 gap-3 flex flex-col mt-4">
-        
         {audios.map((audio) => (
           <li
             key={audio.id}
@@ -63,10 +62,10 @@ const AudioList = () => {
                 }
 
                 .audio-component:hover .custom-audio-player::-webkit-media-controls-panel {
-             background-color: #fffff3 !imprtant;
+                  background-color: #fffff3 !imprtant;
                 }
 
- .audio-component:hover .custom-audio-player {
+                .audio-component:hover .custom-audio-player {
                   border: 1px solid black;
                 }
                 

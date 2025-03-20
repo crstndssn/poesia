@@ -22,9 +22,6 @@ const Footer = () => {
         />
       </div>
 
-
-    
-
       <div className="flex w-3/5 flex-col justify-center items-center">
         <div className="flex flex-col md:flex-row gap-3 mb-0">
           <a
