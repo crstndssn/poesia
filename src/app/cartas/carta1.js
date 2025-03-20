@@ -5,7 +5,7 @@ import Popup from "../../components/Popup"; // Importa el componente Popup
 import ContentPopUp from "../../components/ContentPopUp"; // Importa el componente Popup
 import "../globals.css";
 import Image from "next/image";
-import WhatsAppButton from "@/components/whatsappbutton";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Carta1 = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);

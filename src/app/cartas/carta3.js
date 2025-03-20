@@ -1,6 +1,6 @@
 import React from "react";
 import "../globals.css";
-import WhatsAppButton from "@/components/whatsappbutton";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const carta3 = () => {
   return (

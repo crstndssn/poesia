@@ -1,5 +1,5 @@
-import WhatsAppButton from '@/components/whatsappbutton'
 import '../globals.css'
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const carta2 = () => {
     return (

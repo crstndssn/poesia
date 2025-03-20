@@ -1,7 +1,7 @@
 import React from 'react'
 import '../globals.css'
 import ContentPopUp from '@/components/ContentPopUp'
-import WhatsAppButton from '@/components/whatsappbutton'
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const carta7 = () => {
   return (
