@@ -29,7 +29,7 @@ const page = () => {
             ></iframe> */}
 
             <div className="flex flex-col justify-center items-center gap-3">
-              <div className="w-full xl:w-2/3 flex flex-col md:flex-row gap-2 justify-center items-center">
+              <div className="w-full xl:w-2/3 flex flex-col md:flex-row gap-2 justify-center items-center mt-7 md:mt-0">
                 <div className="min-w-40 min-h-40 w-40 h-40 xl:min-w-48 xl:min-h-48 xl:w-48 xl:h-48 overflow-hidden rounded-full">
                   <Image
                     className="w-full h-full object-cover object-top"
@@ -39,7 +39,7 @@ const page = () => {
                     height={86}
                   />
                 </div>
-                <h1 className="text-base md:text-[20px] leading-6 text-left px-4">
+                <h1 className="text-base md:text-[20px] leading-6 text-center md:text-left px-4">
                   Descubre aquí cómo la poesía, como proyecto vital, ha llevado
                   a <b>Amparo Andrade Loaiza</b>, a construir una experiencia
                   maravillosa y una propuesta pedagógica en relación con la

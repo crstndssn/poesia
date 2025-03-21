@@ -4,6 +4,7 @@ import React from 'react';
 const AudioList = () => {
   // Lista de audios con ruta y descripción
   const audios = [
+    { id: 1, route: "/audios/new/12-gotica.mp3", description: "Gotica de poesía", highlight: true },
     { id: 1, route: "/audios/new/1-Así.mp3", description: "Así", highlight: true },
     { id: 2, route: "/audios/new/2-Chumba-la-cachumba.mp3", description: "Chumba la cachumba" },
     { id: 3, route: "/audios/new/3-Guanaco.mp3", description: "Guanaco" },
@@ -11,7 +12,7 @@ const AudioList = () => {
     { id: 5, route: "/audios/new/5-Las-cuentas.mp3", description: "Las cuentas" },
     { id: 6, route: "/audios/new/6-Mereces-un-amor.mp3", description: "Mereces un amor" },
     { id: 7, route: "/audios/new/7-Qué-quiere-el-lobito.mp3", description: "¿Qué quiere el lobito?" },
-    { id: 8, route: "/audios/new/8-Sigue-tu-caminito.mp3", description: "Sigue tu camnio" },
+    { id: 8, route: "/audios/new/8-Sigue-tu-caminito.mp3", description: "Sigue tu caminito" },
     { id: 9, route: "/audios/new/9-Sombra-en-el-agua.mp3", description: "Sombra en el agua" },
     { id: 10, route: "/audios/new/10-Tapíz.mp3", description: "Tapíz"},
     { id: 11, route: "/audios/new/11-Tarde-en-la-mesa.mp3", description: "Poesía como herramienta educativa"},

@@ -16,7 +16,8 @@ export default function VerVideo() {
           alt="alt"
           width={10}
           height={10}/>
-        <p className="text-lg font-bold">Reproducir video Charla TEDx</p>
+        <p className="text-lg font-bold md:block">Charla TEDx</p>
+        <p className="text-lg font-bold hidden">video Charla TEDx</p>
       </div>
 
       {isOpen && (
